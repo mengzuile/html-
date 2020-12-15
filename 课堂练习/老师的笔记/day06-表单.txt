@@ -1,0 +1,146 @@
+﻿复习
+  html:超文本标记语言
+  
+  html注释
+    写法：<!--注释内容-->
+
+  标记的分类
+    单标记：非封闭类型标记
+      写法：<开始标记>
+    双标记：封闭类型标记
+      写法：<开始标记>内容</结束标记>
+
+  属性和值
+    作用：修饰标记或者修饰标记里的内容
+    写法：<开始标记 属性="值" 属性="值">
+
+  通用属性
+    1.id:取唯一的名字
+    2.class:取唯一或者重复名字
+    3.title:给标记写提示内容
+    4.style:给标记写样式的
+      写法：<开始标记 style="样式名称:样式的值;样式名称:样式的值">
+
+  文本修饰标记(行内元素)
+    b,s,u,i,sup,sub
+
+  特殊符号
+    &nbsp;  &yen;  &copy;  &lt;  &gt;
+
+  换行
+    <br>
+
+  行内分区元素
+    <span></span>
+
+  块分区元素
+    <div align=""></div>
+
+  段落元素
+    <p align=""></p>
+
+  标题元素
+    <h1 align=""></h1>
+
+  水平分割线
+    <hr width="" size="" color="" align="">
+
+  图片
+    <img src="" width="" height="" alt="">
+
+  超链接
+    <a href="#/#id的值" target="_self/_blank">点击内容</a>
+
+  路径
+    绝对路径
+    相对路径
+      同级关系
+      父级关系
+      子级关系
+
+  表格
+    <table border="" width="" height="" cellspacing="" cellpadding="" bgcolor="" align="">
+      <caption>表格的标题</caption>
+      <tr align="" valign="" bgcolor="">行
+        <th>单元格的标题</th>
+        <td bgcolor="" align="" valign="" width="" height="" colspan="" rowspan="">单元格</td>
+      </tr>
+    </table>
+
+ 
+  
+列表
+  有序列表
+    <ol>
+      <li>列表项</li>
+    </ol>
+    属性：type:修改有序列表前边的编号类型
+            值：1,数字，默认值
+	        a
+		A
+		i
+		I
+          start:定义有序列表的编号从第几位开始，值是数字，无单位
+
+  无序列表
+    <ul>
+      <li>列表项</li>
+    </ul>
+    属性：type:修改无序列表前边的符号类型
+            值：disc,实心圆点，默认值
+	        circle,空心圆点
+		square,实心正方块
+		none,无
+
+  自定义列表
+    <dl>
+      <dt>列表的标题</dt>
+      <dd>列表标题的解释项</dd>
+    </dl>
+
+预格式化：保留源文档的格式(空格和换行)
+  <pre></pre>
+
+表单：收集用户输入的数据，传输给后台服务器
+  <form>
+    1.输入框(行内元素)
+      <input>
+      属性：1.type:text,文本输入框,默认值
+                      	   password,密码输入框
+		   button,按钮
+		   submit,提交按钮
+		   reset,重置按钮
+		   file,上传文件
+		   radio,单选按钮
+		   checkbox,复选框
+					关联
+				<input id="woman" type="radio" name="sex">
+				<label for="woman">女</label> 
+				<input id="man" type="radio" name="sex">
+				<label for="man">男</label>
+				<input id="bu" type="radio" name="sex">
+				<label for="bu">不透露</label>
+	    2.value:定义控件的值(button)
+	    3.name:定义控件的名字(radio)
+	    4.placeholder:占位符(text,password)
+	    5.maxlength:设置输入框内容的最大长度(text,password)
+	    6.checked:预选中,没有值的属性(radio.checkbox)
+
+    2.多行文本域
+      <textarea></textarea>
+      属性：cols:设置多行文本域的列数，值是数字，无单位
+            rows:设置多行文本域的行数，值是数字，无单位
+      样式：style="resize:none"取消多行文本域的拉伸效果
+
+    3.下拉列表
+      <select>
+        <option>下拉列表项</option>
+      </select>
+      select属性：size:设置下拉列表显示的项数，值是数字，无单位
+                       当值等于1时，为下拉列表，默认值
+		       当值大于1时，为滚动列表
+		  multiple:实现多选，没有值的属性
+      option属性：selected:预选中，没有值的属性
+
+  </form>
+ 

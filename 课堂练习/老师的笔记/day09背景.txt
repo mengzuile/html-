@@ -1,0 +1,80 @@
+复习
+  选择器权值
+    !important         >1000
+    行内样式            1000
+    id选择器            100
+    class和伪类选择器   10
+    元素选择器          1
+    通用选择器          0
+    继承的样式          无
+
+css样式
+  1.尺寸
+    宽度：width:数字+px/%;
+    高度：height:数字+px/%;
+
+  2.边框
+    border:数字+px solid/dashed/dotted 英文;
+    border-方向:粗细 样式 颜色;
+
+  3.外边距
+    margin:四个方向;
+           上下 左右;
+           上 左右 下;
+	   上 右 下 左;
+    margin-方向:一个值;
+
+    特殊情况
+      1.行内元素只能设置水平方向的外边距
+        块级元素和行内块元素可以设置四个方向的外边距
+
+      2.当两个元素的外边距相遇时，最终距离值以最大值为准
+
+      3.当给子元素设置上外边距时，会作用到父元素上，导致父元素一起下沉
+        解决办法：1.给父元素加边框
+	          2.给父元素设置上内边距代替子元素设置的上外边距
+
+    margin:0 auto;设置定宽元素的水平方向居中对齐
+
+  4.边框倒角
+    设置四个方向的边框倒角
+      border-radius:数字+px/%
+    
+    设置单方向的边框倒角
+      border-top-left-radius:左上角;
+      border-bottom-left-radius:左下角;
+      border-top-right-radius:右上角;
+      border-bottom-right-radius:右下角;
+
+  5.内边距
+    设置四个方向的内边距
+      padding:四个方向;
+              上下 左右;
+	      上 左右 下;
+	      上 右 下 左;顺时针
+	  
+    设置单方向的内边距
+      padding-top:一个值;
+      padding-bottom:一个值;
+      padding-left:一个值;
+      padding-right:一个值;
+
+  6.边框阴影
+    box-shadow:0px 0px 0px 0px gray;
+           值：水平方向偏移距离(必须写)
+	       垂直方向偏移距离(必须写)
+	       模糊距离
+	       阴影尺寸
+	       阴影颜色;
+	       内阴影inset;
+
+  7.背景
+    背景颜色：background-color:英文/16进制/rgb();
+    背景图片：background-image:url("图片路径");
+    背景平铺：background-repeat:1.repeat,平铺，默认值
+                                2.no-repeat,不平铺
+				3.repeat-x,横向平铺
+				4.repeat-y,竖向平铺
+    背景尺寸：background-size:1.width(px/%) height(px/%)
+                              2.cover:将背景图片放大，直到背景图片将元素的所有区域覆盖完为止
+                              3.contain:将背景图片等比例缩放，直到背景图片的其中一个边到达元素的边缘为止

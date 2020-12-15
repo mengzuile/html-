@@ -1,0 +1,109 @@
+复习
+  内边距
+    padding:四个方向;
+            上下 左右;
+	    上 左右 下;
+	    上 右 下 左;
+    padding-方向:一个值;
+
+  外边距
+    margin:0 auto;设置定宽元素的水平方向居中对齐
+    
+  边框倒角
+    border-radius:数字+px/%;
+    border-top-left-radius:
+    border-bottom-left-radius:
+    border-top-right-radius:
+    border-bottom-right-radius:
+
+  边框阴影
+    box-shadow:水平 垂直 模糊 尺寸 颜色 inset;
+	    
+背景
+  背景颜色：background-color:英文/16/rgb();
+  背景图片：background-image:url("");
+  背景平铺：background-repeat:1.repeat,平铺，默认值
+                              2.no-repeat,不平铺
+			      3.repeat-x,横向平铺
+			      4.repeat-y,竖向平铺
+  背景尺寸：background-size:1.width(px/%) height(px/%);
+                            2.cover:将背景图片放大， 直到覆盖完元素的所有区域为止
+                            3.contain:将背景图片等比例的进行缩放，直到图片的其中一个边到达元素的边缘为止
+  背景固定：background-attachment:1.scroll,滚动，默认值
+                                  2.fixed,固定
+  背景定位：background-position:1.水平方向偏移距离
+                                  垂直方向偏移距离
+				2.水平：left center right
+				  垂直：top center bottom
+  
+  简写方式
+    background:(颜色 图片) 平铺 固定 定位;
+  
+文本格式化
+  1.控制字体的样式
+    1.字体样式
+      font-style:normal默认值/italic倾斜
+
+    2.小型大写字母
+      font-variant:normal默认值/small-caps小型大写字母
+
+    3.字体加粗
+      font-weight:normal默认值/bold加粗/100~900
+
+    4.字号大小
+      font-size:数字+px;
+
+    5.指定字体
+      font-family:"微软雅黑","宋体","黑体";
+                  "microsoft yahei","simsun","simhei";
+    简写方式
+      font:样式 小型大写字母 加粗 (大小 指定字体);
+
+  2.控制文本的样式
+    1.文本颜色
+      color:英文/16进制/rgb();
+
+    2.文本的排列方式
+      text-align:left居左
+                 center居中
+		 right居右
+		 justify两端对齐
+
+    3.文本的线条修饰
+      text-decoration:underline下划线
+                      line-through删除线
+		      overline上划线
+		      none取消线条修饰
+
+    4.首行缩进
+      text-indent:值是数字，单位是px
+
+    5.行高
+      line-height:值是数字，单位是px
+
+    6.文本阴影
+      text-shadow:0px 0px 0px red;
+                  水平偏移距离(必须写)
+		  垂直偏移距离(必须写)
+		  模糊距离
+		  阴影颜色;
+
+定位：改变元素的默认位置
+  1.普通文档流定位
+  2.浮动定位
+    float:left/right/none;
+    1.脱离普通文档流定位方式，不占据页面高度，下方元素上前补位
+
+    2.如果页面上有已浮动元素，新的浮动元素会照着已浮动元素的左侧或者右侧浮动
+      如果页面上没有已浮动元素，新的浮动元素会照着父元素的左侧或者右侧浮动
+  3.浮动引发的特殊情况
+    1.如果父元素宽度不够，最后一个浮动元素会换行或者卡住
+    2.如果子元素全部浮动，则父元素高度为0，如果有未浮动的子元素，则父元素的高度以未浮动的子元素为准
+    3.浮动元素会改变行内元素的显示方式为块级，可以设置宽高尺寸了
+    4.图片、文字、行内元素和行内块元素会在已浮动元素的周围“环绕”排列，不会被已浮动元素压在下边
+  4.解决浮动带来的影响
+    1.给父元素加高度
+    2.给父元素加溢出隐藏
+      overflow:hidden隐藏/auto自适应
+    3.给受到浮动影响的下方元素添加清除浮动
+      clear:left/right/both

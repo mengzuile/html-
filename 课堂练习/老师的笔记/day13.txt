@@ -1,0 +1,140 @@
+复习  
+  css样式
+    1.尺寸
+      width:px/%;
+      height:px/%;
+
+    2.边框
+      border:粗细 样式 颜色;
+      border-方向
+
+    3.边框倒角
+      border-radius:px/%;
+      border-top-left-radius
+      border-bottom-left-radius
+      border-top-right-radius
+      border-bottom-right-radius
+
+    4.外边距
+      margin:四个方向;
+             上下 左右;
+	     上 左右 下;
+	     上 右 下 左;
+      margin-方向:一个值;
+
+      margin:0 auto;设置定宽元素的水平方向居中对齐
+
+    5.内边距
+      padding:四个方向;
+             上下 左右;
+	     上 左右 下;
+	     上 右 下 左;
+      padding-方向:一个值;
+ 
+    6.边框阴影
+      box-shadow:水平 垂直 模糊 尺寸 颜色 (内阴影);
+
+    7.背景
+      background-color:;
+      background-image:url("");
+      background-repeat:repeat/no-repeat;
+      background-size:1.width height/2.cover/3.contain;
+      background-attchment:scroll/fixed;
+      background-position:1.水平 垂直;2.left/center/right top/center/bottom
+
+      简写：background:颜色 图片 平铺 固定 定位;
+
+    8.文本格式化
+      1.字体
+        font-style:normal/italic
+	font-variant:normal/small-caps
+	font-weight:normal/bold/100~900
+	font-size:
+	font-family:"微软雅黑","宋体","黑体"
+	            
+      2.文本
+        color:
+	text-indent:数字+px;
+        text-align:left/center/right/justify
+	text-decoration:underline/line-through/overline/none;
+        line-height:数字+px;
+	text-shadow:水平 垂直 模糊 颜色;
+
+    9.定位
+      1.普通文档流定位
+      2.浮动定位
+        float:left/right/none
+    
+	
+显示方式
+  display:inline;行内
+          block;块级
+	  inline-block;行内块
+	  none;隐藏/不显示,不占据页面高度
+
+透明效果
+  background:rgba(0,0,0,0~1);
+        透明度取值，越接近0，越透明，
+	            越接近1，越接近原色
+
+光标的形状
+  cursor:1.default,默认箭头
+         2.help,帮助
+	 3.wait,等待/加载
+	 4.crosshair,十字
+	 5.pointer,小手
+	 6.text,I
+
+图片和文字的垂直对齐方式
+  vertical-align:top上对齐
+                 middle居中
+		 bottom下对齐
+		
+2d转换：改变元素在页面上位置、大小、形状、角度
+  transform:转换函数(function);
+      转换函数：
+         1.位移：移动元素，通过给定的x和y,值是数字，单位是px 
+           translate(值); 横向移动
+	   translate(x,y); 横向和纵向同时移动
+	   translateX(值); 横向移动
+	   translateY(值); 纵向移动	   
+	 2.缩放：缩放元素，根据给定的倍数，值是数字，无单位
+	   scale(值);横向和纵向同时缩放相应的倍数
+	   scale(x,y);横向和纵向同时缩放不同的倍数
+           scaleX(值);横向缩放相应的倍数
+	   scaleY(值);纵向缩放相应的倍数
+	         值：1.值>1,放大相应的倍数
+		     2.0<值<1,缩小相应的倍数
+		     3.-1<值<0,缩小的同时翻转180度
+		     4.值<-1，放大的同时反转180度
+
+
+	 3.旋转：旋转元素，根据给定的角度，值是数字，单位是deg
+	   rotate(值);正值顺时针旋转，负值逆时针旋转
+	   rotateX(值);横向旋转
+	   rotateY(值);纵向旋转
+
+	 4.倾斜：倾斜元素，根据给定的角度，值是数字，单位是deg
+	   skew(值);横向和纵向同时倾斜
+	   skewX(值);横向倾斜
+	   skewY(值);纵向倾斜
+
+  过渡时长：transition:transform  数字+s
+
+动画：使元素从一种样式逐渐变为另外一种样式
+  1.创建动画
+    @keyframes 动画的名称{
+      from {}
+      to {}
+    }
+    
+    @keyframes 动画的名称{
+      0% {}
+      10% {}
+      20% {}
+      ....
+      100% {}
+    }
+
+  2.调用动画
+    animation:动画名称 动画时长 动画速度(linear) 调用次数(infinite)

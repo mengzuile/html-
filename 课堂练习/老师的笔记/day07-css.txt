@@ -1,0 +1,94 @@
+复习
+  列表
+    有序列表
+      <ol type="1/a/A/i/I" start="">
+        <li></li>
+      </ol>
+
+    无序列表
+      <ul type="disc/circle/square/none"> 
+        <li></li>
+      </ul>
+
+    自定义列表
+      <dl>
+        <dt></dt>
+	<dd></dd>
+      </dl>
+
+  预格式化
+    <pre></pre>
+
+  表单：收集用户输入的信息，传输给后台服务器
+    <form>
+      <input type="text/password/button/submit/reset/file/radio/checkbox" value="button" name="radio" placeholder="text/password" maxlength="text/password" checked(radio/checkbox)>
+
+      <textarea cols="" rows="" style="resize:none"></textarea>
+
+      <select size="" multiple>
+        <option selected></option>
+      </select>
+
+    </form>
+
+css:定义网页的样式
+
+css:层叠样式表
+
+css注释
+  写法：/*注释内容*/
+  作用：给样式写批注
+
+样式规则：
+  样式名称:样式的值;
+  样式名称:样式的值;
+  .....
+
+1.行内样式(内联样式)
+  <开始标记 style="样式规则">
+
+2.内部样式
+  1.写在head双标记里
+  2.把style属性当作双标记使用
+  3.在style双标记里，找到需要修改的元素，给它写样式
+  <head>
+    <style>
+      元素的名字{
+        样式规则
+      }
+    </style>
+  </head>
+
+3.外部样式
+  1.新建一个以.css为结尾的文件
+  2.在head双标记里，通过link单标记引入css文件
+  3.在css文件里，找到需要修改的元素，给它写样式
+    在css文件里
+      元素的名称{
+        样式规则
+      }
+    在head头部里
+      <head>
+        <link rel="stylesheet" href="css文件路径">
+      </head>
+
+css的特点
+  1.层叠性：不冲突的样式可以叠加
+  2.继承性：嵌套的父子级关系才可以继承，部分字体样式会被继承
+  3.优先级：就近原则
+
+选择器
+  1.元素选择器：元素的名字{样式规则}
+  2.id选择器：#id的值{样式规则}
+  3.class选择器：.class的值{样式规则}
+  4.通用选择器：*{样式规则}一般用于内外边距的清零
+  5.群组选择器：选择器1,选择器2,选择器3...{样式规则}
+  6.子代选择器：父元素选择器>子元素选择器{样式规则}
+  7.后代选择器：父元素选择器 后代选择器{样式规则}
+  8.伪类选择器  1.鼠标悬浮 写法：选择器:hover{样式规则}
+                2.获取焦点 写法：选择器:focus{样式规则}
+		3.激活状态 写法：选择器:active{样式规则}
+		4.链接伪类  访问前  写法：选择器:link{样式规则}
+		            访问后  写法：选择器:visited{样式规则}
+  爱恨原则
+    LoVe  HAte

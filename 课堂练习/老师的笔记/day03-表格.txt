@@ -1,0 +1,39 @@
+﻿复习
+  超链接
+    <a href="#/#id的值" target="_self/_blank">点击内容</a>
+
+  图片
+    <img src="" width="" height="" alt="">
+
+  路径
+    绝对路径：完整的域名或者文件的完整路径
+    相对路径：本文件相对于其他文件或者其他文件夹的路径关系
+      同级关系：同一目录下，"文件名+后缀"
+      父级关系：上一级目录，"../文件名+后缀"
+      子级关系：下一级目录，"文件夹名字/文件名+后缀"
+
+表格
+  <table>
+     <caption>表格的标题</caption>
+     <tr>行
+       <th>单元格的标题</th>    table>tr*4>td*4 按tab键
+       <td>单元格</td>
+     </tr>
+  </table>
+  table属性：border:设置表格的边框，值是数字，单位是px
+             width:设置表格的宽度，值是数字，单位是px
+	     height:设置表格的高度，值是数字，单位是px
+	     bgcolor:设置表格的背景颜色
+	     align:设置表格的水平方向对齐方式
+	     cellspacing:设置单元格与单元格之间的间距
+	     cellpadding:设置单元格与内容之间的间距
+  tr属性：align:设置行的水平方向的对齐方式left/center/right
+          valign:设置行的垂直方向的对齐方式top/middle/bottom
+	  bgcolor:设置行的背景颜色
+  td属性：align:设置水平方向的对齐方式left/center/right
+          valign:设置垂直方向的对齐方式top/middle/bottom
+	  bgcolor:设置单元格的背景颜色
+	  width:设置单元格的宽度
+	  height:设置单元格的高度
+          colspan:跨列合并，值是几就跨几列，无单位
+	  rowspan:跨行合并，值是几就跨几行，无单位

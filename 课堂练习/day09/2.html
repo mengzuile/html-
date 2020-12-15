@@ -1,0 +1,71 @@
+<!doctype html>
+<html lang="en">
+ <head>
+  <meta charset="UTF-8">
+  <meta name="Generator" content="EditPlus®">
+  <meta name="Author" content="">
+  <meta name="Keywords" content="">
+  <meta name="Description" content="">
+  <title>Document</title>
+  <style>
+	*{
+		margin:0;
+		padding:0;
+	}
+	#wrap{
+		width:1300px;
+		height:50px;
+		margin: 40px auto;
+	}
+	#wrap .box{
+		
+		float:left;
+		width:304px;
+		height:50px;
+		line-height:48px;
+		/* text-align:left; */
+		background:pink;
+	}
+	#wrap .box:hover ~ .box1{
+		display:block;
+	}
+	#wrap .box .s1{
+		display:inline-block;
+		color:#000;
+		font-weight:bold;
+		font-size:19px;
+		text-indent:26px;
+	}
+	#wrap .box .s2{
+		display:inline-block;
+		margin:0 63px;
+		font-size:24px;
+	}
+	#wrap .box1{
+		display:none;
+		float:left;
+		width:200px;
+		height:50px;
+		line-height:50px;
+		text-indent:26px;
+		background:#b1b1b1;
+	}
+  </style>
+ </head>
+ <body>
+	<div id="wrap">
+		<div class="box">
+			<span class="s1">前端/后端开发</span>
+			<span class="s2">&gt;</span>
+		</div>
+		<div class="box1">
+			<span class="ss s3">前端开发</span> 
+			<span class="ss s4">web前端</span>	
+		</div>
+		<div class="box1">
+			<span class="ss s3">前端开发</span> 
+			<span class="ss s4">web前端</span>	
+		</div>
+	</div>
+ </body>
+</html>
