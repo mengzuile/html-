@@ -1,0 +1,48 @@
+<!doctype html>
+<html lang="en">
+ <head>
+  <meta charset="UTF-8">
+  <meta name="Generator" content="EditPlus®">
+  <meta name="Author" content="">
+  <meta name="Keywords" content="">
+  <meta name="Description" content="">
+  <title>Document</title>
+  <style type="text/css">
+	*{
+		margin:0;
+		padding:0;
+	}
+	.box{
+		width:800px;
+		height:500px;
+		border:1px solid red;
+	}
+	.box div{
+		float:left;
+		width:100px;
+		height:200px;
+		margin-right:5px;
+		background-color:green;
+	}
+	.box .list{
+		height:200px;
+	}
+  </style>
+ </head>
+ <body>
+	<!--
+		多个浮动元素的排列特点：
+			按照两个方向（left或者right）按顺序依次排列
+			如果单容器的宽度小于浮动元素总和时，浮动元素会掉下去；
+			当浮动元素高度不齐时，会出现卡住的情况；
+
+	-->
+	<div class="box">
+		<div>1</div>
+		<div class="list">2</div>
+		<div>3</div>
+		<div>4</div>
+		<div>5</div>
+	</div>
+ </body>
+</html>

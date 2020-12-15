@@ -1,0 +1,90 @@
+<!doctype html>
+<html lang="en">
+ <head>
+  <meta charset="UTF-8">
+  <meta name="Generator" content="EditPlus®">
+  <meta name="Author" content="">
+  <meta name="Keywords" content="">
+  <meta name="Description" content="">
+  <title>Document</title>
+  <style type="text/css">
+	*{
+		margin:0;
+		padding:0;
+	}
+	.wrap{
+		position:Relative;
+		width:235px;
+		margin:50px auto;
+		
+	}
+	.wrap .title{
+		
+		height:36px;
+		background-color:#3333cc66;
+		line-height:36px;
+		text-align:Center;
+		font-weight:bold;
+		color:#fff;
+		border-radius:5px 5px 0 0;
+	}
+	.wrap .rotate1{
+		position:absolute;
+		top:100%;
+		
+		width:100%;
+		transform:rotateX(-90deg);
+		background-color:#5f5f5f6e;
+	}
+	.wrap .rotate2{
+		position:absolute;
+		top:100%;
+		width:100%;
+		background-color:#e7e7e7;
+		transform:rotateX(-90deg);
+	}
+	.wrap .nav{
+		transform-origin:center top;
+		transition:3s;
+	}
+	.wrap .nav img{
+		width:50px;
+		height:50px;
+		margin:10px 5px 5px;
+	}
+	.wrap .nav .desc{
+		display:inline-block;
+		width:150px;
+	}
+	.wrap .nav .d-title{
+		color:green;
+		
+	}
+	.wrap .nav .d-info{
+		font-size:12px;
+	}
+	.wrap:hover .nav{
+		transform:rotateX(0deg);
+	}
+  </style>
+ </head>
+ <body>
+	<div class="wrap">
+		<div class="title">3D折叠菜单导航</div>
+		<div class="rotate1 nav" style="position:static">
+			<img src="img/html.png" alt="" />
+			<div class="desc">
+				<div class="d-title">网页特效库</div>
+				<div class="d-info">专注于HTML5、CSS3、js、jQuery、手机移动端等网页特效的手机与分享。</div>
+			</div>
+			<div class="rotate2 nav" >
+				<img src="img/html.png" alt="" />
+				<div class="desc">
+					<div class="d-title">网页特效库</div>
+					<div class="d-info">专注于HTML5、CSS3、js、jQuery、手机移动端等网页特效的手机与分享。</div>
+				</div>
+			</div>
+		</div>
+	</div>  
+ </body>
+</html>

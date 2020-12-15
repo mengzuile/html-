@@ -1,0 +1,37 @@
+<!doctype html>
+<html lang="en">
+ <head>
+  <meta charset="UTF-8">
+  <meta name="Generator" content="EditPlus®">
+  <meta name="Author" content="">
+  <meta name="Keywords" content="">
+  <meta name="Description" content="">
+  <title>Document</title>
+  <style type="text/css">
+	*{
+		margin:0;
+		padding:0;
+	}
+	iframe{
+		width:800px;
+		height:500px;
+	}
+  </style>
+ </head>
+ <body>
+	<!--
+		1. width和height属性用于规定iframe的宽度和高度
+		2. 默认是象素,可以使用百分数
+		3. 放在body标签里面使用,可以和其它任何标签一起使用
+		4. frameborder = "0" / "1" 无边框 / 有边框
+		5. scrolling 规定是否显示滚动条 yes/no/auto
+		6. 使用iframe作为链接的目标 
+		   iframe 可用作链接的目标 target,链接的target属性必须引用 iframe 的 name 属性
+
+	-->
+	<iframe src="https://jusp.tmall.com/" frameborder="1" scrolling="no" name="iframe"></iframe>
+	<a href="1.html" target="iframe">去天猫</a>
+	<a href="https://www.baidu.com" target="iframe">去百度</a>
+	<a href="https://www.jd.com" target="iframe">去京东</a>
+ </body>
+</html>

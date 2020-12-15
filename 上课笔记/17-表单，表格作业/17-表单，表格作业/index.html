@@ -1,0 +1,97 @@
+<!doctype html>
+<html lang="en">
+ <head>
+  <meta charset="UTF-8">
+  <meta name="Generator" content="EditPlus®">
+  <meta name="Author" content="">
+  <meta name="Keywords" content="">
+  <meta name="Description" content="">
+  <title>Document</title>
+  <style type="text/css">
+	*{
+		margin:0;
+		padding:0;
+	}
+	li{
+		list-style:none;
+	}
+	.wrap{
+		width:1000px;
+		height:560px;
+		margin:50px auto;
+		box-shadow: 0 0 8px #fefefe, 0 0 15px #fff;
+	}
+	.wrap li{
+		float:left;
+	}
+	.wrap input{
+		float:left;
+		width:100px;
+		height:560px;
+		opacity:0;
+	}
+	.wrap .bg{
+		width:100px;
+		height:560px;
+		background-color:red;
+		transition:.1s;
+	}
+	.wrap .bg1,.wrap .bgg1{
+		background:url("1.jpg") no-repeat center/cover;
+	}
+	.wrap .bg2,.wrap .bgg2{
+		background:url("2.jpg") no-repeat center/cover;
+	}
+	.wrap .bg3,.wrap .bgg3{
+		background:url("3.jpg") no-repeat center/cover;
+	}
+	.wrap .bg4,.wrap .bgg4{
+		background:url("4.jpg") no-repeat center/cover;
+	}
+	.wrap input:checked + .bg{
+		width:700px;
+	}
+	.wrap input:checked +.bg + .bgg{
+		opacity:1;
+	}
+	.wrap .bgg{
+		position:absolute;
+		z-index:-1;
+		top:0;
+		left:0;
+		width:100%;
+		height:100%;
+		opacity:0;
+		transition: 1s;
+		filter:brightness(70%);
+	}
+  </style>
+ </head>
+ <body>
+	
+	<div class="wrap">
+		<ul>
+			<li>
+				<input type="radio" name="banner" />
+				<div class="bg bg1"></div>
+				<div class="bgg bgg1"></div>
+			</li>
+			<li>
+				<input type="radio" name="banner" />
+				<div class="bg bg2"></div>
+				<div class="bgg bgg2"></div>
+			</li>
+			<li>
+				<input type="radio" name="banner" />
+				<div class="bg bg3"></div>
+				<div class="bgg bgg3"></div>
+			</li>
+			<li>
+				<input type="radio" name="banner" checked />
+				<div class="bg bg4"></div>
+				<div class="bgg bgg4"></div>
+			</li>
+		</ul>
+	</div>
+ </body>
+</html>

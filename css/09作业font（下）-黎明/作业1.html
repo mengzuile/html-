@@ -1,0 +1,51 @@
+<!doctype html><!-- 声明HTML5文档 -->
+<html lang="en"><!--网页根标签-->
+ <head><!--网页的头部-->
+  <meta charset="UTF-8"><!--编码格式 UTF-8 国际编码 gbk gb2312 meta 元标签-->
+  <meta name="Generator" content="EditPlus®">
+  <meta name="Author" content="范清旭"><!--作者-->
+  <meta name="Keywords" content=""><!--关键字-->
+  <meta name="Description" content=""><!--网页的描述-->
+  <title>Document</title><!--标题-->
+  <style type="text/css">
+	*{
+		margin:0;
+		padding:0;
+	}
+	body{
+		background-color:#999;
+	}
+	.box{
+		display:none;
+	}
+	.wrap{
+		width:150px;
+		height:150px;
+		margin:0 auto;
+		border-radius:50%;
+		background:url(images/5.jpg) no-repeat #fff;
+		background-size:100%;
+	}
+	.wrap:hover/* :active */ .box{
+		display:block;
+		width:150px;
+		height:150px;
+		border-radius:50%;
+		font-size:14px;
+		color:#FFF;
+		background-color:rgba(0,0,0,0.6);
+		display:table-cell;
+		vertical-align:middle;
+		text-align:center;
+		
+	}
+  </style>
+ </head>
+ <body>
+   <div class="wrap">
+	 <div class="box">
+		 新品试用<br>IPSA明星王牌套餐
+	 </div>
+   </div>
+ </body><!--网页的身体,可视化区域-->
+</html>

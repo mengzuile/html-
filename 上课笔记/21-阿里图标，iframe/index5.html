@@ -1,0 +1,48 @@
+<!doctype html>
+<html lang="en">
+ <head>
+  <meta charset="UTF-8">
+  <meta name="Generator" content="EditPlus®">
+  <meta name="Author" content="">
+  <meta name="Keywords" content="">
+  <meta name="Description" content="">
+  <title>Document</title>
+  <style type="text/css">
+	
+	div:target{
+		display:none
+	}
+	div{
+		width:100px;
+		height:100px;
+		background-color:pink;
+	}
+	.wrap:empty{
+		background-color:green;
+	}
+	.wrap{
+		width:100px;
+		height:100px;
+		background-color:red;
+	}
+  </style>
+ </head>
+ <body>
+	<!--
+		E:target	当a标签获取焦点href=”所对应的 E元素锚点"
+		E:empty  找到空元素加样式 , 空格也算内容；
+	-->
+	<a href="#box">123</a>
+	<a href="#box1">132</a>
+	<a href="#box2">123</a>
+	<div id="box">1</div>
+	<div id="box1">2</div>
+	<div id="box2">3</div>
+	<div class="wrap"></div>
+	<div class="wrap">
+	
+	</div>
+	<div class="wrap">123</div>
+	<div> 565</div>
+ </body>
+</html>

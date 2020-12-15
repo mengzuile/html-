@@ -1,0 +1,64 @@
+<!doctype html><!-- 声明HTML5文档 -->
+<html lang="en"><!--网页根标签-->
+ <head><!--网页的头部-->
+  <meta charset="UTF-8"><!--编码格式 UTF-8 国际编码 gbk gb2312 meta 元标签-->
+  <meta name="Generator" content="EditPlus®">
+  <meta name="Author" content="黎明"><!--作者-->
+  <meta name="Keywords" content=""><!--关键字-->
+  <meta name="Description" content=""><!--网页的描述-->
+  <title>Document</title><!--标题-->
+  <style type="text/css">
+	*{
+		margin:0;
+		padding:0;
+	}
+	.wrap{
+		position:relative;
+		width:1000px;
+		height:500px;
+		margin:50px auto;
+	}
+	.wrap div{
+		position:absolute;
+		bottom:160px;
+		left:50%;
+		width:200px;
+		height:200px;
+		background-color:pink;
+		opacity:.5;
+		border-radius:75% 0;
+		transform:rotate(-45deg);
+		transform-origin:left bottom;
+		transition:2s;
+	}
+	.wrap:hover div:nth-child(1){
+		transform:rotate(-65deg);
+	}
+	.wrap:hover div:nth-child(2){
+		transform:rotate(-85deg);
+	}
+	.wrap:hover div:nth-child(3){
+		transform:rotate(-105deg);
+	}
+	.wrap:hover div:nth-child(4){
+		transform:rotate(-25deg);
+	}
+	.wrap:hover div:nth-child(5){
+		transform:rotate(-5deg);
+	}
+	.wrap:hover div:nth-child(6){
+		transform:rotate(15deg);
+	}
+  </style>
+ </head>
+ <body>
+  <div class="wrap">
+	<div></div>
+	<div></div>
+	<div></div>
+	<div></div>
+	<div></div>
+	<div></div>
+	<div></div>
+ </body><!--可视化区域-->
+</html>

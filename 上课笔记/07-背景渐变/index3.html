@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="en">
+ <head>
+  <meta charset="UTF-8">
+  <meta name="Generator" content="EditPlus®">
+  <meta name="Author" content="">
+  <meta name="Keywords" content="">
+  <meta name="Description" content="">
+  <title>Document</title>
+  <style type="text/css">
+	*{
+		margin:0;
+		padding:0;
+	}
+	.wrap{
+		width:800px;
+		height:800px;
+		border:1px solid red;
+		/*background:linear-gradient(270deg,red,green);*/
+		background:-ms-linear-gradient(red,green);
+		/* background:-webkit-linear-gradient(left,red 200px,green 200px,yellow 500px,purple 500px); */
+		background:-webkit-linear-gradient(top, red 20%,pink 100%);
+		background:-moz-linear-gradient(red,green);
+		background:-o-linear-gradient(red,green);
+	}
+  </style>
+ </head>
+ <body>
+	<!--
+	css3属性：
+		渐变：是一种颜色到另一种颜色的过渡；(一张图片)
+		线性渐变：
+			从一个方向到另一个方向颜色过渡
+			linear-gradient(方向,颜色 值,颜色 值);
+				方向：
+					to top  0deg
+					to left 90deg
+					to bottom  180deg
+					to right  270deg
+				角度：
+				-ms- 微软
+				-webkit- 谷歌
+				-o- 欧鹏
+				-moz- 火狐
+				top left right bottom 方向值相反
+		径向渐变：
+			从一个点到四周颜色过渡
+	-->
+	<div class="wrap"></div>
+ </body>
+</html>

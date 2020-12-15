@@ -1,0 +1,89 @@
+<!doctype html>
+<html lang="en">
+ <head>
+  <meta charset="UTF-8">
+  <meta name="Generator" content="EditPlus®">
+  <meta name="Author" content="">
+  <meta name="Keywords" content="">
+  <meta name="Description" content="">
+  <title>Document</title>
+  <style type="text/css">
+	*{
+		margin:0;
+		padding:0;
+	}
+	.wrap{
+		width:800px;
+		height:800px;
+		margin:100px auto;
+		background-color:red;
+	}
+	.wrap div{
+		float:left;
+	}
+	.wrap .list1{
+		width:100px;
+		height:100px;
+		background-color:green;
+		transition:1s;
+	}
+	.wrap .list2{
+		width:100px;
+		height:100px;
+		
+		background-color:pink;
+		transition:1s;
+	}
+	.wrap .list3{
+		width:100px;
+		height:100px;
+		background-color:purple;
+		transition:1s;
+		transform-origin:50% 0px;
+	}
+	.wrap .list4{
+		width:100px;
+		height:100px;
+		background-color:yellow;
+		transition:1s;
+		transform-origin:0px 0px;
+	}
+	.wrap:hover .list1{
+		transform:scale(-2,-0.8);
+	}
+	.wrap:hover .list2{
+		transform:translateX(50%);
+	}
+	.wrap:hover .list3{
+		transform:rotate(360deg);
+	}
+	.wrap:hover .list4{
+		transform:skew(45deg,30deg);
+	}
+  </style>
+ </head>
+ <body>
+	<!--
+		transform:  变换
+		  scale(x,y) 缩放
+		   0-1  缩小
+		   值为负数就会倒转
+		  translate(x,y) 位
+			translateX
+			translateY
+		  rotate();
+		  rotateX()
+		  rotateY()
+		  skew(x,y)
+		  skewX()
+		  skewY()
+		transform-origin: 旋转基点；
+	-->
+	<div class="wrap">
+		<div class="list1">list1</div>
+		<div class="list2"> translate</div>
+		<div class="list3">rotate</div>
+		<div class="list4">skew</div>
+	</div>
+ </body>
+</html>

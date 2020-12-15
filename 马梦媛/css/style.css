@@ -1,0 +1,280 @@
+@charset "utf-8";
+*{
+    margin: 0;
+    padding: 0;
+}
+li{
+    list-style:none;
+}
+a{
+    text-decoration: none;
+    color: #fff;
+}
+span{
+    color: #b0b0b0;
+}
+/*header start*/
+#header{
+    width: 100%;
+    height: 172px;
+    
+}
+#header img{
+    width: 100%;
+}
+/*content start*/
+.content{
+    position: relative;
+    background-color: #ece9e996;
+}
+.content .c-top{
+    position: absolute;
+    top: 0;
+    left: 177px;
+    width: 999px;
+    background: url(../img/2.jpg) no-repeat;
+    padding: 3px 0;
+    height: 30px;
+}
+.content .c-top li{
+    float: left;
+    padding: 0 33px;
+    font-weight:bold;
+    font-size: 15px;
+}
+.content .c-top li a:hover{
+    color: #52da19;
+}
+.content .c-bottom{
+    position: absolute;
+    top: 36px;
+    left: 177px;
+    
+}
+.content .c-bottom img{
+    position: relative;
+    margin: 21px -2px;
+}
+.content .c-bottom .title-1 a{
+    position: absolute;
+    top: 24px;
+    right: 14px;
+    color: #33333391;
+    font-size: 14px;
+}
+.content .c-bottom .title-1 a:hover{
+    color: #2687d8;
+}
+.content .c-bottom .c-b-left{
+    position: absolute;
+    top: 60px;
+    left: 12px;
+    width: 470px;
+    height: 281px;
+    background: #b0b0b0;
+    border: 1px solid #ece9e996;
+}
+.content .c-bottom .c-b-left li{
+    float: right;
+    width: 20px;
+    height: 20px;
+    margin: 262px 0;
+    
+    border-left: 1px solid #fff;
+    background: #2d2b2b;
+}
+.content .c-bottom .c-b-left li:hover{
+    background: #b0b0b0;
+}
+.content .c-bottom .c-b-left li a{
+    padding: 0 4px;
+    line-height: 2px;
+    font-weight:bold;
+    font-size: 15px;
+    color: #fff;
+}
+.content .c-bottom .c-b-left .hide{
+    position: absolute;
+    top: -21px;
+    left: -2px;
+    z-index: 100;
+}
+.content .c-bottom .c-b-right{
+    position: absolute;
+    top: 69px;
+    right: 12px;
+    width: 475px;
+    height: 280px;
+    text-align: left;
+}
+.content .c-bottom .c-b-right a{
+    color: #000;
+    line-height: 31px;
+    font-size: 14px;
+}
+.content .c-bottom .c-b-right a:hover{
+    color: #f60;
+}
+/*content-1 start*/
+.content-1{
+    position: relative;
+    top: 427px;
+    left: 0;
+    padding-top:20px;
+    line-height: 65px;
+    text-align: center;
+}
+.content-1 .content-2{
+    position: relative;
+    width: 100%;
+    height: 790px;
+    font-size: 14px;
+    line-height: 30px;
+}
+.content-1 .content-2 a{
+    color: #000;
+}
+.content-1 .content-2 a:hover{
+    color: #f60;
+}
+.content-1 .content-2 .title-2 a{
+    width: 50px;
+    font-size: 12px;
+    color: #b0b0b0;
+}
+.content-1 .content-2 .title-2 a:hover{
+    color: #2687d8;
+}
+.content-1 .content-2 .dongtai{
+    position: absolute;
+    left: 190px;
+    top: 40px;
+    
+}
+.content-1 .content-2 .dongtai .title-2 .w1{
+    position: absolute;
+    left: 435px;
+    top: -35px;
+}
+.content-1 .content-2 .tonggao{
+    position: absolute;
+    left: 720px;
+    top: 40px;
+}
+.content-1 .content-2 .tonggao .title-2 .w2{
+    position: absolute;
+    left: 406px;
+    top: -35px;
+}
+.content-1 .content-2 .puji{
+    position: absolute;
+    left: 190px;
+    top: 302px;
+}
+.content-1 .content-2 .puji .title-2 .w3{
+    position: absolute;
+    left: 435px;
+    top: -35px;
+}
+.content-1 .content-2 .xueren{
+    position: absolute;
+    left: 720px;
+    top: 302px;
+}
+.content-1 .content-2 .xueren .title-2 .w4{
+    position: absolute;
+    left: 405px;
+    top: -35px;
+}
+.content-1 .content-2 .yanjiu{
+    position: absolute;
+    left:190px;
+    top: 568px;
+}
+.content-1 .content-2 .yanjiu .title-2 .w5{
+    position: absolute;
+    left: 435px;
+    top: -40px;
+}
+.content-1 .content-2 .guihua{
+    position: absolute;
+    left:720px;
+    top: 568px;
+}
+.content-1 .content-2 .guihua .title-2 .w6{
+    position: absolute;
+    left: 405px;
+    top: -40px;
+}
+.content-1 .content-3{
+    position: relative;
+}
+.content-1 .content-3 .qikan a{
+    position: absolute;
+    left: 260px;
+    top: 20px;
+    color: #000;
+}
+.content-1 .content-4{
+    position: relative;
+    margin: 0 auto;
+    width: 1000px;
+    height: 300px;
+    background: url("../img/i3.jpg") no-repeat;
+}
+.content-1 .content-4 .f1{
+    margin-left:10px;
+}
+.content-1 .content-4 .f1 li{
+    float: left;
+}
+.content-1 .content-4 .f1 li a{
+    color: #000;
+}
+.content-1 .content-4 .f1 li a:hover{
+    color: #f60;
+}
+.content-1 .content-4 .f1 .tupian-1{
+    margin:40px 7px;
+}
+.content-1 .content-4 .f1 .tupian{
+    margin: -83px 0;
+}
+/*linkc start*/
+.linkc-1{
+    position: relative;
+    margin: 0 auto;
+    width: 100%;
+}
+.linkc-1 .l-top{
+    position: absolute;
+    top: 299px;
+    left: 177px;
+    margin-top: 10px;
+    margin: 20px auto;
+    width: 1000px;
+    height: 40px;
+    border-bottom: 2px solid #2687d8;
+}
+.linkc-1 .l-bottom p{
+    position: absolute;
+    top: 368px;
+    left: 352px;
+    margin: 0 0;
+    line-height: 20px;
+    font-size: 12px;
+}
+.linkc-1 .l-bottom-1{
+    position: absolute;
+    top: 386px;
+    left: 416px;
+    font-size: 12px;
+}
+.x-top{
+    position:fixed;
+	left:45%;
+	margin-left:613px;
+	bottom:0px;
+	width:83px;
+	height:470px;
+}

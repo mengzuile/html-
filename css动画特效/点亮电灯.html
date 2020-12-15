@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        body{
+            background: #112233;
+        }
+        .container{
+            width: 80px;
+            height: 320px;
+            margin: auto;
+            transform-origin: top;
+            animation: go 5s linear infinite;
+        }
+        .container:hover{
+            animation-play-state: paused;
+        }
+        .container:hover .bulb{
+            background-color: #667788;
+            box-shadow: 10px 5px 10px 0 #fff inset;
+        }
+        @keyframes go{
+            0%{
+                transform: rotate(-60deg);
+            }
+            50%{
+                transform: rotate(60deg);
+            }
+            100%{
+                transform: rotate(-60deg);
+            }
+        }
+        .container::before{
+            content: '';
+            display: block;
+            width: 4px;
+            height: 220px;
+            background-image: linear-gradient(45deg,#FFA500 25%,transparent 25%,transparent 50%,
+                #FFA500,50%,#FFA500 75%,transparent 75%
+            );
+            background-size: 20px 20px;
+            margin: auto;
+            animation: run 3s linear infinite;
+        }
+        .container:hover.container::before{
+            animation-play-state: paused; 
+        }
+        @keyframes run {
+            0%{
+                background-position-y: 0%;
+            }
+            100%{
+                background-position-y: 100%;
+            }
+        }
+        .container::after{
+            content: '';
+            display: block;
+            width: 5px;
+            height: 0px;
+            margin: -100px auto 0;
+            border-top: 20px solid #344454;
+            border-right: 10px solid transparent;
+            border-bottom: 20px solid #344454;
+            border-left: 10px solid transparent;
+            border-top: none;
+        }
+        .container .bulb{
+            width: 80px;
+            height: 80px;
+            margin-top: 15px;
+            border-radius: 50%;
+            box-shadow: 0px 0px 10px 0 #fff inset,0 300px 100px 100px #FFD700;
+            background-image: linear-gradient(#2F4F4F 20%,
+                transparent 25%,transparent 30%,
+                #2F4F4F 35%, #2F4F4F 40%,
+                transparent 45%,transparent 50%,
+                #2F4F4F 55%,#2F4F4F 60%,
+                transparent 65%,transparent 70%,
+                #2F4F4F 75%,#2F4F4F 80%,
+                transparent 85%,transparent 90%,
+                #2F4F4F 95%,#2F4F4F 100%
+            );
+            background-size: 80px 10px;
+        }
+        .container .bulb::before{
+            content: '';
+            display: block;
+            width: 20px;
+            height: 20px;
+            margin: auto;
+            border-radius: 50%;
+            box-shadow: 0 0 5px 0 #fff inset;
+        }
+        .container .bulb::after{
+            content: '';
+            display: block;
+            width: 200px;
+            height: 12px;
+            border-radius: 50%;
+            background-color: #667788;
+            box-shadow: 0px 0px 10px 0 #fff;
+            margin: -20px -60px;
+        }
+        
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="bulb"></div>
+    </div>
+</body>
+</html>

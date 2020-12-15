@@ -1,0 +1,106 @@
+<!doctype html>
+<html lang="en">
+ <head>
+  <meta charset="UTF-8">
+  <meta name="Generator" content="EditPlus®">
+  <meta name="Author" content="">
+  <meta name="Keywords" content="">
+  <meta name="Description" content="">
+  <title>Document</title>
+  <style type="text/css">
+	*{
+		margin:0;
+		padding:0;
+	}
+	form{
+		width:300px;
+		height:600px;
+		margin:50px auto;
+		border:1px solid red;
+		padding-left:30px;
+	}
+	input{
+		margin-top:10px;
+	}
+	textarea{
+		width:250px;
+		height:100px;
+		resize:none;
+	}
+	/*
+		resize 调整尺寸样式属性（css3）
+			none 禁止调整
+			vertical 可调整高度
+			horizontal 可调整宽度
+	*/
+  </style>
+ </head>
+ <body>
+	<!--
+		form:提供一块区域让用户输入
+			action 规定当提交表单时向何处发送表单数据 
+			method 规定用于发送 form-data 的 HTTP 方法
+					get
+					post
+			name 名称
+		input    表单控件
+			text    文本框
+			password   密码框
+			radio  单选框
+				通过相同的name名字来实现只能选择一个
+			checkbox 复选框（对的，错的）
+			select 下拉框
+			  option   下拉选项
+		input 常用属性：
+			placeholder 提示
+			maxlength 最大长度
+			autofocus  默认获取焦点
+			readonly 只读
+			disabled  不可选择
+			checked  默认选中
+			selected  默认选中
+			size  控制显示几个
+		textarea   文本域
+			rows  跨行数 
+			（resize:none;使边框不可随意调整
+			outline:none; 使边框不显示焦点）
+			cols 跨列数
+		fieldset  分组
+	-->
+	<form action="" method="">
+		姓名：<input type="text" placeholder="请输入用户名" maxlength="13" name="name" autofocus/><br />
+		密码：<input type="password" placeholder="请输入密码" name="password" readonly/><br />
+		性别：<input type="radio"name="sex" />男<input type="radio" name="sex" />女<br />
+		<fieldset style="text-align:center">
+			<legend>喜欢什么类型女的：</legend>
+			<input type="checkbox" disabled/>大长腿
+			<input type="checkbox" checked/>温柔
+			<label>
+				<input type="checkbox" />御姐
+			</label>
+			<input type="checkbox" id="loli" />
+			<label for="loli">
+				萝莉
+			</label>
+			<input type="checkbox" />懂事<br />
+		</fieldset>
+			颜色框：<input type="color" /><br />
+			数字框: <input type="number" /><br />
+			日期框： <input type="date" /><br />
+			按钮： <input type="button" value="按钮"/><br />
+			重置： <input type="reset" /><br />
+			隐藏 ： <input type="hidden" /><br />
+			图片按钮：<input type="image" src="1.png" width="100" height="100"/>
+			文件：<input type="file" />
+			提交按钮：<input type="submit" /><br />
+			<select size="1">
+				<option value="2015">2015</option>
+				<option value="2014">2014</option>
+				<option value="2013" selected>2013</option>
+				<option value="2012">2012</option>
+				<option value="2010">2010</option>
+			</select><br />
+			<textarea></textarea>
+	</form>
+ </body>
+</html>

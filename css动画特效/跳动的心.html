@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>跳动的心</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        .xin{
+            position: relative;
+            width: 200px;
+            height: 199px;
+            background: #9e041f;
+            margin: 400px auto;
+            animation: xi 2s infinite linear;
+        }
+        .xin::after{
+            content: '';
+            display: inline-block;
+            width: 200px;
+            height: 200px;
+            border-radius: 50%;
+            background: #9e041f;
+            position: absolute;
+            top: -89px;
+            left: 1px;
+        }
+        .xin::before{
+            content: '';
+            display: inline-block;
+            width: 200px;
+            height: 200px;
+            border-radius: 50%;
+            background: #9e041f;
+            position: relative;
+            left: -89px;
+        }
+        @keyframes xi {
+            0%,100%{
+                transform: scale(0.5) rotateZ(45deg);
+            }
+            50%{
+                transform: scale(1.1) rotateZ(45deg);
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="xin">
+    </div>
+</body>
+</html>

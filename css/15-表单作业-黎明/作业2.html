@@ -1,0 +1,98 @@
+ <!doctype html><!-- 声明HTML5文档 -->
+<html lang="en"><!--网页根标签-->
+ <head><!--网页的头部-->
+  <meta charset="UTF-8"><!--编码格式 UTF-8 国际编码 gbk gb2312 meta 元标签-->
+  <meta name="Generator" content="EditPlus®">
+  <meta name="Author" content="黎明"><!--作者-->
+  <meta name="Keywords" content=""><!--关键字-->
+  <meta name="Description" content=""><!--网页的描述-->
+  <title>Document</title><!--标题-->
+  <style type="text/css">
+	*{
+		margin:0;
+		padding:0;
+	}
+	li{
+		list-style:none;
+		float:left;
+	}
+	.wrap{
+		width:740px;
+		height:400px;
+		margin:100px auto;
+		box-shadow:0 0 8px #fff,0 0 15px #fff;
+		background:url("4.jpg") no-repeat center/cover;
+	}
+	.wrap input{
+		float:left;
+		width:20px;
+		height:294px;
+		opacity:0;
+		
+	}
+	.wrap .bg{
+		top:-300px;
+		width:20px;
+		height:400px;
+		transition:3s;
+		
+	}
+	.wrap .bg1,.wrap .bgg1{
+		background:url("1.jpg") no-repeat center/cover;
+	}
+	.wrap .bg2,.wrap .bgg2{
+		background:url("2.jpg") no-repeat center/cover;
+	}
+	.wrap .bg3,.wrap .bgg3{
+		background:url("3.jpg") no-repeat center/cover;
+	}
+	.wrap .bg4,.wrap .bgg4{
+		background:url("4.jpg") no-repeat center/cover;
+	}
+	.wrap input:checked + .bg{
+		width:680px;
+	}
+	.wrap input:checked + .bg + .bgg{
+		opacity:1;
+	}
+	.wrap .bgg{
+		/* display:none; */
+		position:absolute;
+		z-index:-1;
+		top:0;
+		left:0;
+		width:100%;
+		height:100%;
+		opacity:0;
+		transition:5s;
+		filter:brightness(70%);
+	}
+  </style>
+ </head>
+ <body>
+	<div class="wrap">
+		<ul>
+			<li>
+				<input type="radio" name="banner"/>
+				<div class="bg bg1"></div>
+				<div class="bgg bgg1"></div>
+			</li>
+			<li>
+				<input type="radio" name="banner" checked />
+				<div class="bg bg2"></div>
+				<div class="bgg bgg2"></div>
+			</li>
+			<li>
+				<input type="radio" name="banner"/>
+				<div class="bg bg3"></div>
+				<div class="bgg bgg3"></div>
+			</li>
+			<li>
+				<input type="radio" name="banner"/>
+				<div class="bg bg4"></div>
+				<div class="bgg bgg4"></div>
+			</li>
+		</ul>
+	</div>
+ </body><!--可视化区域-->
+</html>

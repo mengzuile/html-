@@ -1,0 +1,482 @@
+<!doctype html>
+<html lang="en">
+ <head>
+  <meta charset="UTF-8">
+  <meta name="Generator" content="EditPlus®">
+  <meta name="Author" content="">
+  <meta name="Keywords" content="">
+  <meta name="Description" content="">
+  <title>Document</title>
+  <style type="text/css">
+	*{
+		margin:0;
+		padding:0;
+	}
+	li{
+		list-style:none;
+
+	}
+	body{
+		font: 14px/1.5 "Helvetica Neue",Helvetica,Arial,"Microsoft Yahei","Hiragino Sans GB","Heiti SC","WenQuanYi Micro Hei",sans-serif;
+	}
+	a{
+		text-decoration:none;
+	}
+	.banner{
+		position:relative;
+		width:1226px;
+		height:460px;
+		margin:50px auto;
+		
+	}
+	.banner .pic li{
+		position:absolute;
+		top:0;
+		left:0;
+	}
+	.banner .btn > div{
+		position:absolute;
+		top:50%;
+		margin-top:-34.5px;
+		width:41px;
+		height:69px;
+		background:url("btn.png") no-repeat;
+	}
+	.banner .btn .b-left{
+		left:234px;
+		background-position:-83px 0;
+	}
+	.banner .btn .b-left:hover{
+		background-position:0 0;
+	}
+	.banner .btn .b-right{
+		right:0;
+		background-position:right 0;
+	}
+	.banner .btn .b-right:hover{
+		background-position:-41px 0;
+	}
+	.banner .tab{
+		position:absolute;
+		right:10px;
+		bottom:10px;
+		/* width:300px; */
+		/* height:10px; */
+		
+	}
+	.banner .tab li{
+		float:left;
+		width:6px;
+		height:6px;
+		margin:0 5px;
+		border:2px solid #ddd;
+		background-color:#eee;
+		border-radius:50%;
+	}
+	.banner .tab li.active{
+		border:2px solid #eee;
+		background-color:#ddd;
+	}
+	.banner .nav{
+		position:absolute;
+		top:0;
+		left:0;
+		width:234px;
+		height:440px;
+		padding-top:20px;
+		background-color:rgba(0,0,0,.6);
+	}
+	.banner .nav  li.list{
+		height:42px;
+		padding-left:20px;
+		line-height:42px;
+	}
+	.banner .nav li a{
+		color:#fff;
+	}
+	.banner .nav li span{
+		float:right;
+		margin-right:20px;
+		color:#fff;
+		font-weight:bold;
+		font-size:18px;
+	}
+	.banner .nav li.list:hover{
+		background-color:#f60;
+	}
+	.banner .nav li.list:hover .goods{
+		display:block;
+	}
+	.banner .goods{
+		display:none;
+		position:absolute;
+		left:234px;
+		top:0px;
+		width:992px;
+		height:460px;
+		background-color:#fff;
+		box-shadow: 1px 1px 5px gray;
+	}
+	.banner .goods ul{
+		float:left;
+		width:248px;
+		height:460px;
+		
+	}
+	.banner .goods ul img{
+		width:40px;
+		height:40px;
+		margin-right:10px;
+		vertical-align:middle;
+	}
+	.banner .goods ul li{
+		line-height:75px;
+		padding-left:15px;
+	}
+	.banner .goods ul a{
+		color:#000;
+	}
+	.banner .goods ul a:hover{
+		color:#f60;
+	}
+	.banner .goods1{
+		width:530px;
+
+	}
+	.banner .goods1 ul{
+		width:265px;
+	}/* 
+	.banner .goods2{
+		width:530px;
+	
+	}
+	.banner .goods2 ul{
+		width:265px;
+	}
+	.banner .goods3{
+		width:530px;
+	
+	}
+	.banner .goods3 ul{
+		width:265px;
+	}
+	.banner .goods4{
+		width:530px;
+	
+	}
+	.banner .goods4 ul{
+		width:265px;
+	}
+	.banner .goods5{
+		width:530px;
+	
+	}
+	.banner .goods5 ul{
+		width:265px;
+	}
+	.banner .goods6{
+		width:530px;
+	
+	}
+	.banner .goods6 ul{
+		width:265px;
+	}
+	.banner .goods7{
+		width:530px;
+	
+	}
+	.banner .goods7 ul{
+		width:265px;
+	}
+	.banner .goods8{
+		width:530px;
+	
+	}
+	.banner .goods8 ul{
+		width:265px;
+	}
+	.banner .goods9{
+		width:530px;
+	
+	}
+	.banner .goods9 ul{
+		width:265px;
+	}
+	.banner .goods10{
+		width:530px;
+	
+	}
+	.banner .goods10 ul{
+		width:265px;
+	} */
+  </style>
+ </head>
+ <body>
+	<div class="banner">
+		<ul  class="pic">
+			<li><a href=""><img src="banner/1.jpg" alt="" /></a></li>
+			<li><a href=""><img src="banner/2.jpg" alt="" /></a></li>
+			<li><a href=""><img src="banner/3.jpg" alt="" /></a></li>
+			<li><a href=""><img src="banner/4.jpg" alt="" /></a></li>
+			<li><a href=""><img src="banner/5.jpg" alt="" /></a></li>
+		</ul>
+		<div class="btn">
+			<div class="b-left"></div>
+			<div class="b-right"></div>
+		</div>
+		<div class="tab">
+			<ul>
+				<li class="active"></li>
+				<li></li>
+				<li></li>
+				<li></li>
+				<li></li>
+			</ul>
+		</div>
+		<div class="nav">
+			<ul>
+				<li class="list"><a href="">手机 电话卡
+						<span> > </span>
+					</a>
+					<div class="goods">
+						<ul>
+							<li><a href="">
+									<img src="item/1/4.png"  alt="" />小米MIX3
+								</a></li>
+							<li><a href="">
+									<img src="item/1/4.png" alt="" />小米MIX3
+								</a></li>
+							<li><a href="">
+									<img src="item/1/4.png" alt="" />小米MIX3
+								</a></li>
+							<li><a href="">
+									<img src="item/1/4.png" alt="" />小米MIX3
+								</a></li>
+							<li><a href="">
+									<img src="item/1/4.png" alt="" />小米MIX3
+								</a></li>
+							<li><a href="">
+									<img src="item/1/4.png" alt="" />小米MIX3
+								</a></li>
+						</ul>
+						<ul>
+							<li><a href="">
+									<img src="item/1/4.png"  alt="" />小米MIX3
+								</a></li>
+							<li><a href="">
+									<img src="item/1/4.png" alt="" />小米MIX3
+								</a></li>
+							<li><a href="">
+									<img src="item/1/4.png" alt="" />小米MIX3
+								</a></li>
+							<li><a href="">
+									<img src="item/1/4.png" alt="" />小米MIX3
+								</a></li>
+							<li><a href="">
+									<img src="item/1/4.png" alt="" />小米MIX3
+								</a></li>
+							<li><a href="">
+									<img src="item/1/4.png" alt="" />小米MIX3
+								</a></li>
+						</ul>
+						<ul>
+							<li><a href="">
+									<img src="item/1/4.png"  alt="" />小米MIX3
+								</a></li>
+							<li><a href="">
+									<img src="item/1/4.png" alt="" />小米MIX3
+								</a></li>
+							<li><a href="">
+									<img src="item/1/4.png" alt="" />小米MIX3
+								</a></li>
+							<li><a href="">
+									<img src="item/1/4.png" alt="" />小米MIX3
+								</a></li>
+							<li><a href="">
+									<img src="item/1/4.png" alt="" />小米MIX3
+								</a></li>
+							<li><a href="">
+									<img src="item/1/4.png" alt="" />小米MIX3
+								</a></li>
+						</ul>
+						<ul>
+							<li><a href="">
+									<img src="item/1/4.png"  alt="" />小米MIX3
+								</a></li>
+							<li><a href="">
+									<img src="item/1/4.png" alt="" />小米MIX3
+								</a></li>
+							<li><a href="">
+									<img src="item/1/4.png" alt="" />小米MIX3
+								</a></li>
+							<li><a href="">
+									<img src="item/1/4.png" alt="" />小米MIX3
+								</a></li>
+							<li><a href="">
+									<img src="item/1/4.png" alt="" />小米MIX3
+								</a></li>
+							<li><a href="">
+									<img src="item/1/4.png" alt="" />小米MIX3
+								</a></li>
+						</ul>
+					</div>
+				</li>
+				<li class="list"><a href="">手机 电话卡
+						<span> > </span>
+					</a>
+					<div class="goods goods1">
+						<ul>
+							<li><a href="">
+									<img src="item/1/4.png"  alt="" />小米MIX3
+								</a></li>
+							<li><a href="">
+									<img src="item/1/4.png" alt="" />小米MIX3
+								</a></li>
+							<li><a href="">
+									<img src="item/1/4.png" alt="" />小米MIX3
+								</a></li>
+							<li><a href="">
+									<img src="item/1/4.png" alt="" />小米MIX3
+								</a></li>
+							<li><a href="">
+									<img src="item/1/4.png" alt="" />小米MIX3
+								</a></li>
+							<li><a href="">
+									<img src="item/1/4.png" alt="" />小米MIX3
+								</a></li>
+						</ul>
+						<ul>
+							<li><a href="">
+									<img src="item/1/4.png"  alt="" />小米MIX3
+								</a></li>
+							<li><a href="">
+									<img src="item/1/4.png" alt="" />小米MIX3
+								</a></li>
+							<li><a href="">
+									<img src="item/1/4.png" alt="" />小米MIX3
+								</a></li>
+							<li><a href="">
+									<img src="item/1/4.png" alt="" />小米MIX3
+								</a></li>
+							<li><a href="">
+									<img src="item/1/4.png" alt="" />小米MIX3
+								</a></li>
+							<li><a href="">
+									<img src="item/1/4.png" alt="" />小米MIX3
+								</a></li>
+						</ul>
+					</div>
+					</li>
+				<li class="list"><a href="">手机 电话卡
+						<span> > </span>
+					</a></li>
+					<div class="goods goods2">
+						<ul>
+							<li><a href="">
+									<img src="item/1/4.png"  alt="" />小米MIX3
+								</a></li>
+							<li><a href="">
+									<img src="item/1/4.png" alt="" />小米MIX3
+								</a></li>
+							<li><a href="">
+									<img src="item/1/4.png" alt="" />小米MIX3
+								</a></li>
+							<li><a href="">
+									<img src="item/1/4.png" alt="" />小米MIX3
+								</a></li>
+							<li><a href="">
+									<img src="item/1/4.png" alt="" />小米MIX3
+								</a></li>
+							<li><a href="">
+									<img src="item/1/4.png" alt="" />小米MIX3
+								</a></li>
+						</ul>
+						<ul>
+							<li><a href="">
+									<img src="item/1/4.png"  alt="" />小米MIX3
+								</a></li>
+							<li><a href="">
+									<img src="item/1/4.png" alt="" />小米MIX3
+								</a></li>
+							<li><a href="">
+									<img src="item/1/4.png" alt="" />小米MIX3
+								</a></li>
+							<li><a href="">
+									<img src="item/1/4.png" alt="" />小米MIX3
+								</a></li>
+							<li><a href="">
+									<img src="item/1/4.png" alt="" />小米MIX3
+								</a></li>
+							<li><a href="">
+									<img src="item/1/4.png" alt="" />小米MIX3
+								</a></li>
+						</ul>
+					</div>
+				<li class="list"><a href="">手机 电话卡
+						<span> > </span>
+					</a></li>
+					<div class="goods goods3">
+						<ul>
+							<li><a href="">
+									<img src="item/1/4.png"  alt="" />小米MIX3
+								</a></li>
+							<li><a href="">
+									<img src="item/1/4.png" alt="" />小米MIX3
+								</a></li>
+							<li><a href="">
+									<img src="item/1/4.png" alt="" />小米MIX3
+								</a></li>
+							<li><a href="">
+									<img src="item/1/4.png" alt="" />小米MIX3
+								</a></li>
+							<li><a href="">
+									<img src="item/1/4.png" alt="" />小米MIX3
+								</a></li>
+							<li><a href="">
+									<img src="item/1/4.png" alt="" />小米MIX3
+								</a></li>
+						</ul>
+						<ul>
+							<li><a href="">
+									<img src="item/1/4.png"  alt="" />小米MIX3
+								</a></li>
+							<li><a href="">
+									<img src="item/1/4.png" alt="" />小米MIX3
+								</a></li>
+							<li><a href="">
+									<img src="item/1/4.png" alt="" />小米MIX3
+								</a></li>
+							<li><a href="">
+									<img src="item/1/4.png" alt="" />小米MIX3
+								</a></li>
+							<li><a href="">
+									<img src="item/1/4.png" alt="" />小米MIX3
+								</a></li>
+							<li><a href="">
+									<img src="item/1/4.png" alt="" />小米MIX3
+								</a></li>
+						</ul>
+					</div>
+				<li class="list"><a href="">手机 电话卡
+						<span> > </span>
+					</a></li>
+				<li class="list"><a href="">手机 电话卡
+						<span> > </span>
+					</a></li>
+				<li class="list"><a href="">手机 电话卡
+						<span> > </span>
+					</a></li>
+				<li class="list"><a href="">手机 电话卡
+						<span> > </span>
+					</a></li>
+				<li class="list"><a href="">手机 电话卡
+						<span> > </span>
+					</a></li>
+				<li class="list"><a href="">手机 电话卡
+						<span> > </span>
+					</a></li>
+			</ul>
+		</div>
+	</div>
+ </body>
+</html>

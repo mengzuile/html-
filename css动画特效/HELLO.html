@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        body{
+            background-color: #c5987b;
+        }
+        .container{
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%,-50%);
+            text-align: center;
+            user-select: none; /*文本不能被选择 */
+        }
+        .text{
+            border-bottom: 5px solid #535451;
+            width: 100%;
+            color: #fff;
+            font-size: 6em;
+            text-shadow: 3px 3px 6px #cdcdcd;
+            box-shadow: inset 0px -5px 10px -7px rgba(0, 0, 0, 0.7),inset 0px 5px 10px -7px rgba(0, 0, 0, 0.7);
+            animation: text 2s ease-in-out infinite;
+            overflow: hidden;
+        }
+        .cap{
+            position: absolute;
+            left: -1px;
+            height: 100%;
+            background: #c5987b;
+            animation: cap 2s ease-in-out infinite;
+        }
+
+        /*动画部分*/
+        @keyframes text{
+            0%{
+                width: 0%;
+            }
+            50%,100%{
+                width: 100%;
+            }
+        }
+        @keyframes cap{
+            0%,50%{
+                width: 0%;
+            }
+            100%{
+                width: 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="cap"></div>
+        <div class="text">HELLO</div>
+    </div>
+</body>
+</html>

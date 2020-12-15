@@ -1,0 +1,95 @@
+<!doctype html>
+<html lang="en">
+ <head>
+  <meta charset="UTF-8">
+  <meta name="Generator" content="EditPlus®">
+  <meta name="Author" content="">
+  <meta name="Keywords" content="">
+  <meta name="Description" content="">
+  <title>Document</title>
+  <style type="text/css">
+	*{
+		margin:0;
+		padding:0;
+	}
+	body,html{
+		height:100%;
+	}
+	body{
+		/*background-image:url("1.jpg");
+		background-size:100% 100%;*/
+	}
+	.wrap{
+		width:500px;
+		height:500px;
+		padding:50px;
+		border:50px solid rgba(0,0,0,.3);
+		/*background-color:green;*/
+		/*background-image:url("images/2.jpg");
+		background-repeat:no-repeat;
+		
+		/*background-position:10% 20%;
+		background-size:100% 100%;
+		background-origin:border-box;
+		/* background-clip:content-box; 
+		-webkit-background-clip:text;
+		font-size:150px;
+		font-weight:bold;
+		color:transparent;
+		text-align:center;*/
+		background:no-repeat center center/contain url(1.jpg)  red  ;
+	}
+  </style>
+ </head>
+ <body>
+	<!--
+		background:  背景
+		background-image:  背景的图片
+				url()  路径
+		background-repeat:    平铺方式
+			no-repeat  不平埔
+			repeat-x   x轴方向平铺
+			repeat-y  y轴方向平铺
+			./
+			../
+		background-position:x轴 y轴;
+				px
+				英语单词   
+					left  right center top bottom
+					当只有一个值，第二个值默认为center;
+				%  
+					相对于盒子的剩余空间来的
+		background-size:x轴  y轴   调整图片大小
+				px
+				%
+				cover        图片缩放,直到整个背景图片占满背景框  
+				contain		 图片缩放,直到背景图片有一边触碰到背景边框就停止缩放
+		background-origin:	背景图片显示基点
+			1)content-box 背景图像相对于内容边框
+
+			2) padding-box 背景图像相对于内边距  （默认情况）
+
+			3) border-box 背景图像相对于边框
+		层叠上下文：
+			background<block<inline/inline-block
+		background-clip: 背景图片裁剪区域 
+			1) content-box 背景被裁剪到内容区域
+
+			2) padding-box 背景被裁剪到内边距
+
+			3) border-box 背景被裁剪到盒子边框
+
+			4) text 相对于文本  (只有谷歌浏览器兼容)
+			兼容前缀：
+				-wekit-   谷歌
+				 -o-   欧鹏
+				-moz-  火狐
+				-ms-   ie
+			复合属性：
+				background: color url() 平铺方式 背景定位/背景大小;
+	-->
+	<div class="wrap">
+		小胖胖
+	</div>
+ </body>
+</html>

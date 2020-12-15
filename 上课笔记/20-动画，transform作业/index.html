@@ -1,0 +1,241 @@
+<!doctype html>
+<html lang="en">
+ <head>
+  <meta charset="UTF-8">
+  <meta name="Generator" content="EditPlus®">
+  <meta name="Author" content="">
+  <meta name="Keywords" content="">
+  <meta name="Description" content="">
+  <title>Document</title>
+  <style type="text/css">
+	*{
+		margin:0;
+		padding:0;
+	}
+	body{
+		background-color:#000;
+	}
+	.wrap{
+		overflow:hidden;
+		position:relative;
+		width:500px;
+		height:500px;
+		margin:50px auto;
+		background-color:#FFF;
+		border-radius:10px;
+	}
+	.wrap .top{
+		position:absolute;
+		top:0;
+		left:-500px;
+		width:500px;
+		height:10px;
+		background-color:red;
+		animation: top 8s forwards;
+	}
+	@keyframes top{
+		to{
+			left:0px;
+		}
+	}
+	@keyframes bottom{
+		to{
+			right:0px;
+		}
+	}
+	@keyframes left{
+		to{
+			bottom:0px;
+		}
+	}
+	@keyframes right{
+		to{
+			top:0px;
+		}
+	}
+	.wrap .bottom{
+		position:absolute;
+		bottom:0;
+		right:-500px;
+		width:500px;
+		height:10px;
+		background-color:pink;
+		animation: bottom 8s forwards;
+	}
+	.wrap .right{
+		position:absolute;
+		top:-500px;
+		right:0px;
+		width:10px;
+		height:500px;
+		background-color:green;
+		animation: right 8s forwards;
+	}	
+	.wrap .left{
+		position:absolute;
+		bottom:-500px;
+		left:0px;
+		width:10px;
+		height:500px;
+		background-color:yellow;
+		animation: left 8s forwards;
+	}
+	.wrap .content{
+		overflow:hidden;
+		width:400px;
+		height:400px;
+		margin:50px;
+		/* background-color:pink; */
+		border-radius:10px;
+
+	}
+	.wrap .content span{
+		float:left;
+		width:80px;
+		height:80px;
+		background:url("01.png") no-repeat;
+		opacity:0;
+	}
+	.wrap .content span:nth-child(1){
+		background-position:0 0;
+		animation:run 1s 0s linear forwards;
+	}
+	.wrap .content span:nth-child(2){
+		background-position:-80px 0;
+		animation:run 1s 1s linear forwards;
+	}
+	.wrap .content span:nth-child(3){
+		background-position:-160px 0;
+		animation:run 1s 2s linear forwards;
+	}
+	.wrap .content span:nth-child(4){
+		background-position:-240px 0;
+		animation:run 1s 3s linear forwards;
+	}
+	.wrap .content span:nth-child(5){
+		background-position:-320px 0;
+		animation:run 1s 4s linear forwards;
+	}
+	.wrap .content span:nth-child(6){
+		background-position:0 -80px;
+		animation:run 1s 1s linear forwards;
+	}
+	.wrap .content span:nth-child(7){
+		background-position:-80px -80px;
+		animation:run 1s 2s linear forwards;
+	}
+	.wrap .content span:nth-child(8){
+		background-position:-160px -80px;
+		animation:run 1s 3s linear forwards;
+	}
+	.wrap .content span:nth-child(9){
+		background-position:-240px -80px;
+		animation:run 1s 4s linear forwards;
+	}
+	.wrap .content span:nth-child(10){
+		background-position:-320px -80px;
+		animation:run 1s 5s linear forwards;
+	}
+	.wrap .content span:nth-child(11){
+		background-position:0 -160px;
+		animation:run 1s 2s linear forwards;
+	}
+	.wrap .content span:nth-child(12){
+		background-position:-80px -160px;
+		animation:run 1s 3s linear forwards;
+	}
+	.wrap .content span:nth-child(13){
+		background-position:-160px -160px;
+		animation:run 1s 4s linear forwards;
+	}
+	.wrap .content span:nth-child(14){
+		background-position:-240px -160px;
+		animation:run 1s 5s linear forwards;
+	}
+	.wrap .content span:nth-child(15){
+		background-position:-320px -160px;
+		animation:run 1s 6s linear forwards;
+	}
+	.wrap .content span:nth-child(16){
+		background-position:0 -240px;
+		animation:run 1s 3s linear forwards;
+	}
+	.wrap .content span:nth-child(17){
+		background-position:-80px -240px;
+		animation:run 1s 4s linear forwards;
+	}
+	.wrap .content span:nth-child(18){
+		background-position:-160px -240px;
+		animation:run 1s 5s linear forwards;
+	}
+	.wrap .content span:nth-child(19){
+		background-position:-240px -240px;
+		animation:run 1s 6s linear forwards;
+	}
+	.wrap .content span:nth-child(20){
+		background-position:-320px -240px;
+		animation:run 1s 7s linear forwards;
+	}
+	.wrap .content span:nth-child(21){
+		background-position:0 -320px;
+		animation:run 1s 4s linear forwards;
+	}
+	.wrap .content span:nth-child(22){
+		background-position:-80px -320px;
+		animation:run 1s 5s linear forwards;
+	}
+	.wrap .content span:nth-child(23){
+		background-position:-160px -320px;
+		animation:run 1s 6s linear forwards;
+	}
+	.wrap .content span:nth-child(24){
+		background-position:-240px -320px;
+		animation:run 1s 7s linear forwards;
+	}
+	.wrap .content span:nth-child25){
+		background-position:-320px -320px;
+		animation:run 1s 8s linear forwards;
+	}
+	@keyframes run{
+		to{
+			opacity:1;
+		}
+	}
+	</style>
+ </head>
+ <body>
+	<div class="wrap">
+		<div class="top"></div>
+		<div class="right"></div>
+		<div class="bottom"></div>
+		<div class="left"></div>
+		<div class="content">
+			<span></span>
+			<span></span>
+			<span></span>
+			<span></span>
+			<span></span>
+			<span></span>
+			<span></span>
+			<span></span>
+			<span></span>
+			<span></span>
+			<span></span>
+			<span></span>
+			<span></span>
+			<span></span>
+			<span></span>
+			<span></span>
+			<span></span>
+			<span></span>
+			<span></span>
+			<span></span>
+			<span></span>
+			<span></span>
+			<span></span>
+			<span></span>
+			<span></span>
+		</div>
+	</div>
+ </body>
+</html>

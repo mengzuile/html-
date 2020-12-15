@@ -1,0 +1,156 @@
+<!doctype html><!-- 声明HTML5文档 -->
+<html lang="en"><!--网页根标签-->
+ <head><!--网页的头部-->
+  <meta charset="UTF-8"><!--编码格式 UTF-8 国际编码 gbk gb2312 meta 元标签-->
+  <meta name="Generator" content="EditPlus®">
+  <meta name="Author" content="黎明"><!--作者-->
+  <meta name="Keywords" content=""><!--关键字-->
+  <meta name="Description" content=""><!--网页的描述-->
+  <title>Document</title><!--标题-->
+  <style type="text/css">
+	*{
+		margin:0;
+		padding:0;
+	}
+	.wrap{
+		position:relative;
+		width:400px;
+		height:400px;
+		margin:40px auto;
+		background-color:pink;
+	}
+	.wrap .flower{
+		position:absolute;
+		left:59px;
+		top:59px;
+		width:100px;
+		height:100px;
+		background-color:#c9f;
+		
+		border-radius:0px 105px 0px 105px;
+		transform-origin:right bottom;
+	}
+	.wrap .flower:after{
+		position:absolute;
+		left:37px;
+		top:31px;
+		content:"";
+		width:12px;
+		height:12px;
+		box-shadow:0 0 14px 5px white;
+		background-color:#Ffc;
+		border-radius:50%;
+	}
+	.wrap .flower:before{
+		position:absolute;
+		left:74px;
+		top:39px;
+		content:"";
+		width:2px;
+		height:68px;
+		transform:rotate(138deg);
+		background-color:#990099bf;
+	}
+	.wrap .f{
+		animation:run 5s alternate infinite;
+	}
+	@keyframes run{
+		10%{
+			transform:rotate(45deg);
+		}
+		100%{
+			transform:rotate(45deg);
+		}
+	}
+	.wrap .f1{
+		animation:run1 5s alternate infinite;
+	}
+	@keyframes run1{
+		20%{
+			transform:rotate(90deg);
+		}
+		100%{
+			transform:rotate(90deg);
+		}
+	}
+	.wrap .f2{
+		animation:run2 5s alternate infinite;
+	}
+	@keyframes run2{
+		30%{
+			transform:rotate(135deg);
+		}
+		100%{
+			transform:rotate(135deg);
+		}
+	}
+	.wrap .f3{
+		animation:run3 5s alternate infinite;
+	}
+	@keyframes run3{
+		40%{
+			transform:rotate(180deg);
+		}
+		100%{
+			transform:rotate(180deg);
+		}
+	}
+	.wrap .f4{
+		animation:run4 5s alternate infinite;
+	}
+	@keyframes run4{
+		50%{
+			transform:rotate(225deg);
+		}
+		100%{
+			transform:rotate(225deg);
+		}
+	}
+	.wrap .f5{
+		animation:run5 5s alternate infinite;
+	}
+	@keyframes run5{
+		60%{
+			transform:rotate(270deg);
+		}
+		100%{
+			transform:rotate(270deg);
+		}
+	}
+	.wrap .f6
+		animation:run6 5s alternate infinite;
+	}
+	@keyframes run6{
+		70%{
+			transform:rotate(315deg);
+		}
+		100%{
+			transform:rotate(315deg);
+		}
+	}
+	.wrap .f7{
+		animation:run7 5s alternate infinite;
+	}
+	@keyframes run7{
+		80%{
+			transform:rotate(314deg);
+		}
+		100%{
+			transform:rotate(314deg);
+		}
+	}
+  </style>
+ </head>
+ <body>
+	<div class="wrap">
+		<div class="flower f"></div>	
+		<div class="flower f1"></div>
+		<div class="flower f2"></div>
+		<div class="flower f3"></div>
+		<div class="flower f4"></div>
+		<div class="flower f5"></div>
+		<div class="flower f6"></div>
+		<div class="flower f7"></div>
+	</div>
+ </body><!--可视化区域-->
+</html>

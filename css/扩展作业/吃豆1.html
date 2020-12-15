@@ -1,0 +1,102 @@
+<!doctype html><!-- 声明HTML5文档 -->
+<html lang="en"><!--网页根标签-->
+ <head><!--网页的头部-->
+  <meta charset="UTF-8"><!--编码格式 UTF-8 国际编码 gbk gb2312 meta 元标签-->
+  <meta name="Generator" content="EditPlus®">
+  <meta name="Author" content="黎明"><!--作者-->
+  <meta name="Keywords" content=""><!--关键字-->
+  <meta name="Description" content=""><!--网页的描述-->
+  <title>Document</title><!--标题-->
+  <style type="text/css">
+	*{
+		margin:0;
+		padding:0;
+	}
+	body{
+		background-color:#000;
+	}
+	.wrap,.box{
+		position:relative;
+		width:200px;
+		height:200px;
+		margin:40px 60px;
+		border-radius:50%;
+	}
+	.box{
+		position:absolute;
+		top:-5px;
+		left:46px;
+		z-index:-1;
+		box-shadow:104px -42px 0px -92px white,
+		144px -42px 0px -92px white,
+		188px -42px 0px -92px white,
+		241px -42px 0px -92px white,
+		288px -42px 0px -92px white,
+		324px -42px 0px -92px white,
+		370px -42px 0px -92px white,
+		410px -42px 0px -92px white;
+		animation: right 1s infinite;
+	}
+	.wrap:before , .wrap:after{
+		content:"";
+		display:block;
+		width:100px;
+		height:50px;
+		margin-left:100px;
+		border-radius:100px 100px 0 0;
+		background-color:#ffff00;
+		animation: top 1s infinite;
+	}
+	.wrap:after{
+		border-radius:0 0 100px 100px;
+		animation: bottom 1s infinite;
+	}
+	@keyframes top{
+		0%{
+			transform:rotate(0deg);
+		}
+		50%{
+			transform:rotate(-30deg);
+		}
+		100%{
+			transform:rotate(0deg);
+		}
+	}
+	@keyframes bottom{
+		0%{
+			transform:rotate(0deg);
+		}
+		50%{
+			transform:rotate(30deg);
+		}
+		100%{
+			transform:rotate(0deg);
+		}
+	}
+	@keyframes right{
+		100%{
+			margin-left:-8px;
+		}
+		80%{
+			margin-left:5px;
+		}
+		60%{
+			margin-left:20px;
+		}
+		40%{
+			margin-left:30px;
+		}
+		20%{
+			margin-left:40px;
+		}
+		0%{
+			margin-left:50px;
+		}
+	}
+  </style>
+ </head>
+ <body>
+	<div class="wrap"></div>
+	<div class="box"></div>
+ </body><!--可视化区域-->
+</html>

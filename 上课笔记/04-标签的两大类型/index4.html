@@ -1,0 +1,46 @@
+<!doctype html>
+<html lang="en">
+ <head>
+  <meta charset="UTF-8">
+  <meta name="Generator" content="EditPlus®">
+  <meta name="Author" content="">
+  <meta name="Keywords" content="">
+  <meta name="Description" content="">
+  <title>Document</title>
+  <style type="text/css">
+	.wrap{
+		margin-top:-100px;
+		width:200px;
+		height:200px;
+		background-color:green;
+	}
+	body{
+		text-align:center;/*居中*/
+	}
+	span{
+		
+		background-color:red;
+	}
+  </style>
+ </head>
+ <body>
+	<!--
+		display:inline (行内元素)
+			1.从左至右排列
+			2.不支持宽高，由内容撑开。(具有包裹性)；
+			  支持左右padding,上下padding只对自身有效；
+			  不支持上下margin；
+			3.出现空格换行符解析成一个空格;
+			4.不支持margin:auto;居中方法：在其祖宗元素加text-align:center;
+			5.a标签可以嵌套块级元素；
+			a span strong i em img del ins.....
+		层叠上下文顺序：(分层渲染)
+			块元素 < 行内元素；
+			
+	-->
+	
+	<span>123</span>         <span>246</span><a href="">跳转</a>
+	<div class="wrap"></div>
+	
+ </body>
+</html>

@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="en">
+ <head>
+  <meta charset="UTF-8">
+  <meta name="Generator" content="EditPlus®">
+  <meta name="Author" content="">
+  <meta name="Keywords" content="">
+  <meta name="Description" content="">
+  <title>Document</title>
+ </head>
+ <body>
+	<div>
+		<p></p>
+	</div>
+	<div>
+		<span></span>
+	</div>
+
+	<!--
+		DOM Tree:			+			Css tree:  =     render Tree 
+			解析dom tree 深度优先		  
+				html							
+		head			body
+	meta   title	div		div			
+					p	    span
+	浏览器渲染网页：
+		1.构建DOM Tree
+		2.构建CSS Tree
+		3.DOM Tree 和 CSS tree 合并成render Tree;
+		4.根据渲染树来计算几何信息
+		5.呈现到页面
+
+	-->
+ </body>
+</html>

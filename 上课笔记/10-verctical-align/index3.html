@@ -1,0 +1,61 @@
+<!doctype html>
+<html lang="en">
+ <head>
+  <meta charset="UTF-8">
+  <meta name="Generator" content="EditPlus®">
+  <meta name="Author" content="">
+  <meta name="Keywords" content="">
+  <meta name="Description" content="">
+  <title>Document</title>
+  <style type="text/css">
+	*{
+		margin:0;
+		padding:0;
+	}
+	.wrap{
+		border:1px solid red;
+	}
+	.box{
+		display:inline-block;
+		width:100px;
+		height:100px;
+		background-color:green;
+	}
+	img{
+		vertical-align:0%;
+	}
+	.list{
+		display:inline-block;
+		width:100px;
+		height:100px;
+		background-color:red;
+		vertical-align:baseline;
+	}
+  </style>
+ </head>
+ <body>
+	<!--
+		verctical-align:   垂直对齐方式（inline/inline-block;）
+			baseline    基线对齐
+			
+			top: 元素及其后代的顶端与整行的顶端对齐。
+			text-top: 元素顶端与父元素字体的顶端对齐。
+			bottom:元素及其后代的底端与整行的底端对齐。
+			text-bottom:元素底端与父元素字体的底端对齐。
+			middle  中线对齐 
+			中线： 小写x的交叉点，x-height/2
+			px
+				0px ===>  baseline
+				正值  ====》上移动
+				负值 ====>下移动
+			%    0% ===>  baseline
+				正值  ====》上移动
+				负值 ====>下移动
+			%相对于行高来计算的
+	-->
+	<div class="wrap">
+		<img src="1.jpg" alt="" />
+		xyz
+	</div>
+ </body>
+</html>

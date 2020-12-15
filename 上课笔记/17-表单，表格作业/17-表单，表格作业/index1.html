@@ -1,0 +1,102 @@
+<!doctype html>
+<html lang="en">
+ <head>
+  <meta charset="UTF-8">
+  <meta name="Generator" content="EditPlus®">
+  <meta name="Author" content="">
+  <meta name="Keywords" content="">
+  <meta name="Description" content="">
+  <title>Document</title>
+  <style type="text/css">
+	*{
+		margin:0;
+		padding:0;
+	}
+	li{
+		list-style:none;
+	}
+	.wrap{
+		width:364px;
+		margin:50px auto;
+		border:1px solid #ddd;
+		border-radius:10px;
+		padding:40px 40px 40px 20px;
+	}
+	.wrap li{
+		position:Relative;
+		margin-bottom:20px;
+		text-align:right;
+	}
+	.wrap .tip{
+		display:none;
+		position:absolute;
+		right:-220px;
+		top:0;
+		height:40px;
+		width:200px;
+		padding:5px 7px;
+		background-color:green;
+		color:#fff;
+		text-align:left;
+		border-radius:5px;
+	}
+	.wrap .tip:after{
+		position:absolute;
+		top: 10px;
+		left: -20px;
+		content:"";
+		border:10px solid transparent;
+		border-right-color:green;
+	}
+	.wrap input{
+		width:290px;
+		height:40px;
+		border-radius:5px;
+		margin-left:8px;
+		border:1px solid #ddd;
+		outline:none;
+		text-indent:15px;
+	}
+	.wrap input:focus + .tip{
+		display:block;
+	}
+	.wrap button{
+		outline:none;
+		border:none;
+		background-color:green;
+		padding:5px 10px;
+		color:#fff;
+		border-radius:5px;
+	}
+  </style>
+ </head>
+ <body>
+	<div class="wrap">
+		<ul>
+			<li>
+				用户名：<input type="text" placeholder="输入英文" />
+				<div class="tip">用户名必须位4-16位的数字或者英文字母</div>
+
+			</li>
+			<li>
+				密码<input type="text" />
+				<div class="tip">用户名必须位4-16位的数字或者英文字母</div>
+			</li>
+			<li>
+				确认密码<input type="text" />
+			</li>
+			<li>
+				email<input type="text" />
+			</li>
+			<li>
+				昵称<input type="text" />
+			</li>
+			<li>
+				<button>注册</button>
+				<button>我有帐号，我要登录</button>
+				
+			</li>
+		</ul>
+	</div>
+ </body>
+</html>

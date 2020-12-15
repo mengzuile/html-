@@ -1,0 +1,72 @@
+<!doctype html>
+<html lang="en">
+ <head>
+  <meta charset="UTF-8">
+  <meta name="Generator" content="EditPlus®">
+  <meta name="Author" content="">
+  <meta name="Keywords" content="">
+  <meta name="Description" content="">
+  <title>Document</title>
+  <style type="text/css">
+	*{
+		margin:0;
+		padding:0;
+	}
+	/* [class]{
+		width:100px;
+		height:100px;
+		background-color:red;
+	}
+	[class~="wrap"]{
+	
+		background-color:green;
+	}
+	[class|="wrap"]{
+		background-color:pink;
+	}
+	[class*="w"]{}
+	[class^=""]{}
+	[class$="p"]{
+		
+	} */
+	.wrap div{
+		width:100px;
+		height:100px;
+		background-color:green;
+		margin-bottom:5px;
+	}
+	.wrap p:last-of-type{
+		background-color:pink;
+	}
+  </style>
+ </head>
+ <body>
+	<!--
+		E:nth-child(2n) E:nth-child(even);偶数
+		E:nth-child(2n+1) E:nth-child(odd)奇数
+		E:first-child  找第一个子元素；
+		E:last-child  找最后个子元素；
+		E:nth-child(n)	表示选择E父级中所有子元素中第n个子节点
+		E:nth-last-child(n)	表示选择E父级中所有子元素中第n个字节点，从后向前计算
+		——>需E选择器能选中此元素
+		E:nth-of-type(n)	表示选择E父级中子元素是E类型的集合中的，第n个子节点
+		E:nth-last-of-type(n)	表示选择E父级中子元素是E类型的集合中的，从后向前计算
+		——->需E选择器能选中此元素,且区分标签类型
+		E:nth-child(odd)	匹配奇数行 同p:nth-child(2n-1)
+		E:nth-child(even)	匹配偶数行 同p:nth-child(2n)
+		E:empty	表示E元素中没有子节点（不能有空格,回车）。注意：子节点包含文本节点
+		E:first-of-type:
+		E:last-of-type:
+		[上面的 Ie-8(不支持)][Ie-9(支持)]
+	-->
+	<div class="wrap">
+		<div>1</div>
+		<p>5</p>
+		<div>2</div>
+		<div>3</div>
+		<p>6</p>
+		<div>4</div>
+		<div>5</div>
+	</div>
+ </body>
+</html>

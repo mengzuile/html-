@@ -1,0 +1,165 @@
+<!doctype html><!-- 声明HTML5文档 -->
+<html lang="en"><!--网页根标签-->
+ <head><!--网页的头部-->
+  <meta charset="UTF-8"><!--编码格式 UTF-8 国际编码 gbk gb2312 meta 元标签-->
+  <meta name="Generator" content="EditPlus®">
+  <meta name="Author" content="黎明"><!--作者-->
+  <meta name="Keywords" content=""><!--关键字-->
+  <meta name="Description" content=""><!--网页的描述-->
+  <title>Document</title><!--标题-->
+  <style type="text/css">
+	*{
+		margin:0;
+		padding:0;
+	}
+	li{
+		list-style:none;
+	}
+	a{
+		text-decoration:none;
+		color:#000;
+	}
+	.wrap .content a{
+		padding-left:40px;
+		line-height:40px;
+	}
+	.pic img{
+		width:80%;
+	}
+	.wrap{
+		width:1100px;
+		height:600px;
+		margin:40px auto;
+		border:1.9px solid #d7d7d7;
+	}
+	.wrap .content{
+		width:950px;
+		height:40px;
+		margin:30px auto;
+		border:1.5px solid #d7d7d7;
+	}
+	.wrap .pic{
+		float:left;
+		width:210px;
+		height:210px;
+		margin:14px -54px 5px 81px;
+		border:1px solid #d7d7d7;
+	}
+	.wrap .pic .flowers{
+		margin:16px -24px 6px 24px;
+	}
+	.wrap .pic .title{
+		line-height:9px;
+		margin-left:45px;
+		font-weight:bold;
+		font-size:0.88em;
+	}
+  </style>
+ </head>
+ <body>
+	<div class="wrap">
+		<div class="content">
+			<a href="">流行</a>
+			<a href="">热销</a>
+			<a href="">上新</a>
+			<a href="">价格</a>
+		</div>
+		<div class="pic">
+			<ul>
+				<li>
+					<div class="flowers">
+						<a href=""><img src="images/xh_img1.jpg" alt="" /></a>
+					</div>
+					<div class="title">
+						<a href="">粉色玫瑰浪漫系列</a>
+					</div>
+				</li>
+			</ul>		
+		</div>
+		<div class="pic">
+			<ul>
+				<li>
+					<div class="flowers">
+						<a href=""><img src="images/xh_img2.jpg" alt="" /></a>
+					</div>
+					<div class="title">
+						<a href="">深红色经典玫瑰系列</a>
+					</div>
+				</li>
+			</ul>		
+		</div>
+		<div class="pic">
+			<ul>
+				<li>
+					<div class="flowers">
+						<a href=""><img src="images/xh_img3.jpg" alt="" /></a>
+					</div>
+					<div class="title">
+						<a href="">清淡优雅百年好合系列</a>
+					</div>
+				</li>
+			</ul>		
+		</div>
+		<div class="pic">
+			<ul>
+				<li>
+					<div class="flowers">
+						<a href=""><img src="images/xh_img4.jpg" alt="" /></a>
+					</div>
+					<div class="title">
+						<a href="">紫色冷艳系列</a>
+					</div>
+				</li>
+			</ul>		
+		</div>
+		<div class="pic">
+			<ul>
+				<li>
+					<div class="flowers">
+						<a href=""><img src="images/xh_img5.jpg" alt="" /></a>
+					</div>
+					<div class="title">
+						<a href="">紫色冷艳系列</a>
+					</div>
+				</li>
+			</ul>		
+		</div>
+		<div class="pic">
+			<ul>
+				<li>
+					<div class="flowers">
+						<a href=""><img src="images/xh_img6.jpg" alt="" /></a>
+					</div>
+					<div class="title">
+						<a href="">红色玫瑰系列</a>
+					</div>
+				</li>
+			</ul>		
+		</div>
+		<div class="pic">
+			<ul>
+				<li>
+					<div class="flowers">
+						<a href=""><img src="images/xh_img7.jpg" alt="" /></a>
+					</div>
+					<div class="title">
+						<a href="">蓝色妖姬</a>
+					</div>
+				</li>
+			</ul>		
+		</div>
+		<div class="pic">
+			<ul>
+				<li>
+					<div class="flowers">
+						<a href=""><img src="images/xh_img8.jpg" alt="" /></a>
+					</div>
+					<div class="title">
+						<a href="">粉红女郎系列</a>
+					</div>
+				</li>
+			</ul>		
+		</div>
+	</div>
+ </body><!--可视化区域-->
+</html>

@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="en">
+ <head>
+  <meta charset="UTF-8">
+  <meta name="Generator" content="EditPlus®">
+  <meta name="Author" content="">
+  <meta name="Keywords" content="">
+  <meta name="Description" content="">
+  <title>Document</title>
+  <style type="text/css">
+		*{
+			margin:0;
+			padding:0;
+		}
+		.wrap{
+			/*width:100px;*/
+			/*display:block;*/
+
+			margin-left:200px;
+			margin-right:300px;
+			height:100px;
+			background-color:red;
+		}
+  </style>
+ </head>
+ <body>
+	<!--
+		display:block  (块级元素)
+			1. 所有样式都支持
+			2. 独占一行 (宽度的流动性)
+				注意：p标签不能嵌套块级元素
+			3.从上至下排列的
+				
+		div,p,h1-h6 ,ul li ,ol ,dl dt dd....
+		display:inline (行内元素)
+		bfc ( block format context	) 块格式化上下文；
+	-->
+	<div class="wrap"></div>
+	<div class="wrap"></div>
+ </body>
+</html>

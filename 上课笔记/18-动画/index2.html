@@ -1,0 +1,70 @@
+<!doctype html>
+<html lang="en">
+ <head>
+  <meta charset="UTF-8">
+  <meta name="Generator" content="EditPlus®">
+  <meta name="Author" content="">
+  <meta name="Keywords" content="">
+  <meta name="Description" content="">
+  <title>Document</title>
+  <style type="text/css">
+	*{
+		margin:0;
+		padding:0;
+	}
+	.wrap{
+		height:700px;
+		width:800px;
+		border:1px solid red;
+	}
+	.wrap .list{
+		position:relative;
+		left:0;
+		width:100px;
+		height:100px;
+		margin-bottom:5px;
+		background-color:red;
+		transition-property:all;
+		transition-duration:3000ms;
+		/* transition-delay:3s; */
+	}
+	.wrap .list1{
+		transition-timing-function:linear
+	}
+	.wrap .list2{
+		transition-timing-function:ease-in;
+	}
+	.wrap .list3{
+		transition-timing-function:ease-out;
+	}
+	.wrap .list4{
+		transition-timing-function:ease-in-out;
+	}
+	.wrap .list5{
+		transition-timing-function:cubic-bezier(1,.45,.57,-1.53);
+	}
+	.wrap:hover .list{
+		left:700px;
+	}
+  </style>
+ </head>
+ <body>
+	<!--
+		transition-timing-function  运动曲线
+		1. linear 匀速
+		2. ease 慢快慢(默认)
+		3. ease-in 慢入
+		4. ease-out 慢出
+		5. ease-in-out 慢入慢出
+		6. cubic-bezier 贝塞尔曲线(x1,y1,x2,y2) 
+	-->
+	<div class="wrap">
+		<div class="list">ease</div>
+		<div class="list list1">linear</div>
+		<div class="list list2">ease-in</div>
+		<div class="list list3">ease-out</div>
+		<div class="list list4">ease-in-out</div>
+		<div class="list list5">cubic-bezier</div>
+	</div>
+ </body>
+</html>

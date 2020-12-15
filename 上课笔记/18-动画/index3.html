@@ -1,0 +1,119 @@
+<!doctype html>
+<html lang="en">
+ <head>
+  <meta charset="UTF-8">
+  <meta name="Generator" content="EditPlus®">
+  <meta name="Author" content="">
+  <meta name="Keywords" content="">
+  <meta name="Description" content="">
+  <title>Document</title>
+  <style type="text/css">
+	*{
+		margin:0;
+		padding:0;
+	}
+	.wrap{
+		position:relative;
+		width:800px;
+		height:800px;
+		background-color:red;
+		
+	}
+	.wrap .box{
+		position:Absolute;
+		left:0;
+		top:0;
+		width:100px;
+		height:100px;
+		background-color:green;
+		/* animation-name:run;
+		animation-duration:3s;
+		animation-delay:3s;
+		animation-timing-function:ease;
+		animation-iteration-count:1;
+		animation-direction:alternate-reverse;
+		animation-fill-mode:forwards;保持最后一帧的状态 */
+		animation: run 3s  2s linear forwards ;
+	}
+	/*定义帧动画*/
+	.wrap:hover .box{
+		animation-play-state:paused;
+	}
+	@keyframes run{
+		0%{
+			left:0;
+			top:0;
+		}
+		25%{
+			left:700px;
+			top:0px;
+		}
+		50%{
+			left:700px;
+			top:700px;
+		}
+		100%{
+			left:0;
+			top:700px;
+		}
+		
+				
+	}
+	
+  </style>
+ </head>
+ <body>
+	<!--
+		动画：
+			帧——就是影像动画中最小单位的单幅影像画面。 一帧就是一副静止的画面，连续的帧就形成动画，如电视图象等。 我们通常说帧数，简单地说，就是在1秒钟时间里传输的图片的帧数，也可以理解为图形处理器每秒钟能够刷新几次，通常用FPS（Frames Per Second）表示。每一帧都是静止的图象，快速连续地显示帧便形成了运动的假象。高的帧率可以得到更流畅、更逼真的动画。每秒钟帧数 (fps) 愈多，所显示的动作就会愈流畅。
+			关键帧——任何动画要表现运动或变化，至少前后要给出两个不同的关键状态，而中间状态的变化和衔接电脑可以自动完成，在Flash中，表示关键状态的帧叫做关键帧。
+			过渡帧——在两个关键帧之间，电脑自动完成过渡画面的帧叫做过渡帧。 
+		animation-name:   动画名字；
+		animation-duration:  动画时间；
+		animation-delay:;  
+		animation-timing-function:; 
+		animation-iteration-count:  动画运动的次数
+		1. animation-direction 动画是否反响运动
+		   1)  normal 默认 正常方向
+		   2) reverse 反方向运动
+		   3) alternate 动画先正后反方向运行
+		   4) alternate-reverse 先反后正方向运行
+		2. animation-play-state 动画执行状态
+		   1) running 运动,默认
+		   2) paused 暂停
+		3. animation-fill-mode 动画对象时间之外的状态
+		   1) none 默认 原始状态>动画>原始状态
+		   2) forwards 原始状态>动画>停在动画帧100%
+		   3) backwards (忽略原始状态)进入动画帧0%>动画>原始状态
+		   4) both (忽略原始状态)进入动画帧0%>动画>停在动画帧100%
+
+			infinite  无穷次
+		定义动画帧：
+			@keyframes run{
+				0%{
+					width:100px;
+				}
+				100%{
+					width:500px;
+				}
+			}
+			@keyframes run{
+				from{
+					width:100px;
+				}
+				to{
+					width:500px;
+				}
+			}
+			@keyframes run{
+	
+				to{
+					width:500px;
+				}
+			}
+	-->
+	<div class="wrap">
+		<div class="box"></div>
+	</div>
+ </body>
+</html>

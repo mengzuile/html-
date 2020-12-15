@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="en">
+ <head>
+  <meta charset="UTF-8">
+  <meta name="Generator" content="EditPlus®">
+  <meta name="Author" content="">
+  <meta name="Keywords" content="">
+  <meta name="Description" content="">
+  <title>Document</title>
+  <style type="text/css">
+	*{
+		margin:0;
+		padding:0;
+	}
+	.wrap{
+		position:Relative;
+		width:100px;
+		height:100px;
+		border:1px solid red;
+	}
+	.wrap:after{
+		position:Absolute;
+		top:20px;
+		right:0;
+		content:"";
+		width:0;
+		height:0;
+		border:10px solid transparent;
+		border-top-color:red;
+		border-bottom:none;
+		transition:3s;
+	}
+	.wrap:hover:after{
+		transform:Rotate(180deg);
+	}
+  </style>
+ </head>
+ <body>
+	<div class="wrap">
+	
+	</div>
+ </body>
+</html>

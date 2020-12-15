@@ -1,0 +1,132 @@
+<!doctype html>
+<html lang="en">
+ <head>
+  <meta charset="UTF-8">
+  <meta name="Generator" content="EditPlus®">
+  <meta name="Author" content="">
+  <meta name="Keywords" content="">
+  <meta name="Description" content="">
+  <title>Document</title>
+  <style type="text/css">
+	*{
+		margin:0;
+		padding:0;
+	}
+	hgroup{
+		border:1px solid red;
+	}
+	time{
+		font-weight:bold;
+	}
+  </style>
+ </head>
+ <body>
+	<!--
+		<hgroup></hgroup> 一个标题和一个子标题，或者标语的组合
+
+		1.<hgroup>
+		2.    <h1>潭州教育</h1>
+		3.    <h2>付出不亚于任何人的努力</h2>
+		4.</hgroup>
+		<figure> < figure > 用于对元素进行组合。一般用于图片或视频 
+		<figcaption> </figcaption>元素为元素组添加标题
+
+		1.<figure>
+		2.    <img src=“”/>(注意没有alt)
+		3.     <figcaption> 说明文字</figcaption>
+		4.</figure>
+		<time></time>用来表现时间或日期
+
+		1.<p> 早上 <time>9:00</time> 开始营业。 </p>参数
+		2.<p> <time datetime="2008-02-14">情人节</time> 有个约会。 </p>
+		<datalist></datalist>标签定义选项列表。请与 input 元素配合使用该元素，来定义 input 可 
+		能的值。请使用 input 元素的 list 属性来绑定 datalist ID。
+
+		1.<input type="text" list="valList" />
+		2.<datalist id="valList">
+		3.    <option value="javascript">javascript</option>
+		4.   <option value="html">html</option>
+		5.  <option value="css">css</option>
+		6.</datalist>
+		<details></details>用于描述文档或文档某个部分的细节该元素用于摘录引用等 ，与 标签 配合使用 
+		Open 属性默认展开 
+		< summary></summary> details 元素的标题
+
+		1.<details  open="open">
+		2.    <summary>潭州教育</summary>
+		3.    <p>国内将知名的IT培训机构</p>
+		4.</details>
+		<dialog></dialog>定义一段对话, 默认展开需要添加 open属性
+
+		1.<dialog open>
+		2.  <dt>老师</dt>
+		3.  <dd>2+2 等于？</dd>
+		4.  <dt>学生</dt>
+		5.  <dd>4</dd>
+		6.  <dt>老师</dt>
+		7.  <dd>答对了！</dd>
+		8.</dialog>
+		<address></address> 定义文章 或页面作者的详细联系信息
+
+		1.<address>
+		2.    email:<a href="mailto:68603587@qq.com">68603587@qq.com</a>.<br> 
+		3.    web:Example.com<br>
+		4.    QQ:68603587<br>
+		5.</address>
+		<meter> 定义已知范围或分数值内的标量测量。也被称为 gauge（尺度）。 
+		比如磁盘用量、查询结果的相关性。
+
+		1.<meter min=”0” max=”10” value='3'  low='' high='' ></meter>
+		<progress><progress>定义进度条
+
+		1.<progress max="100" value="76">
+		2.     <span>76</span>%
+		3.</progress>
+		<mark></mark> 需要标记的词或句子，默认黄色背景
+	-->
+	<hgroup>
+		<h1>你好</h1>
+		<h2>大家好</h2>
+		<h3>我好</h3>
+	</hgroup>
+	<figure>
+		<img src="1.jpg" width="200px" height="200px"  />
+		<figcaption>美女</figcaption>
+	</figure>
+	我们<time>8:30</time>上课
+	<input type="text" list="shop" />
+	<datalist id="shop">
+		<option value="全新第八代英特尔® 酷睿™ 处理器">全新第八代英特尔® 酷睿™ 处理器</option>
+		<option value="GeForce® MX110独立显卡，2GB 显存">GeForce® MX110独立显卡，2GB 显存</option>
+		<option value="双风扇散热系统双出风口，2+2 热管布局">双风扇散热系统双出风口，2+2 热管布局</option>
+	</datalist>
+	<details open="open">
+		<summary>笔记本的配置？</summary>
+		<ul>
+			<li>全新第八代英特尔® 酷睿™ 处理器</li>
+			<li>GeForce® MX110独立显卡，2GB 显存</li>
+			<li>双风扇散热系统双出风口，2+2 热管布局</li>
+		</ul>
+	</details>
+	<!-- <dialog open>
+		<dt>老师</dt>
+		<dd>2+2 等于？</dd>
+		<dt>学生</dt>
+		<dd>4</dd>
+		<dt>老师</dt>
+		<dd>答对了！</dd>
+	</dialog> -->
+	<address>潭州教育</address>
+	<meter min="0" max="100" value="80" low="60" high="90"></meter>
+	<progress id="pro" value="0" max="100"></progress>
+	<script type="text/javascript">
+		var timer = setInterval(function(){
+			pro.value++;
+			if (pro.value == 70)
+			{
+				clearInterval(timer);
+			}
+		},100);
+	</script>
+ </body>
+</html>

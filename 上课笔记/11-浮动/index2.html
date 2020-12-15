@@ -1,0 +1,46 @@
+<!doctype html>
+<html lang="en">
+ <head>
+  <meta charset="UTF-8">
+  <meta name="Generator" content="EditPlus®">
+  <meta name="Author" content="">
+  <meta name="Keywords" content="">
+  <meta name="Description" content="">
+  <title>Document</title>
+  <style type="text/css">
+	*{
+		margin:0;
+		padding:0;
+	}
+	.wrap{
+		display:inline-block;
+		
+		width:200px;
+		height:200px;
+		background-color:red;
+	}
+	
+	.box{
+		float:left;
+		margin:34PX auto;
+		width:100px;
+		height:100px;
+		background-color:green;
+
+	}
+  </style>
+ </head>
+ <body>
+  <!--
+	文档流： 元素按从左到右，从上到下的排版方式形成的流
+	层叠上下文：(Stacking context)
+		bg < block < float < inline/inline-block;
+	加了浮动的元素就叫它浮动元素，形成一个浮动流；就有自己的渲染规则
+	
+  -->
+	<div class="wrap">
+		
+	</div>
+	<div class="box"></div>
+	 </body>
+</html>

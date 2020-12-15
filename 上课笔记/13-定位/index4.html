@@ -1,0 +1,48 @@
+<!doctype html>
+<html lang="en">
+ <head>
+  <meta charset="UTF-8">
+  <meta name="Generator" content="EditPlus®">
+  <meta name="Author" content="">
+  <meta name="Keywords" content="">
+  <meta name="Description" content="">
+  <title>Document</title>
+  <style type="text/css">
+	*{
+		margin:0;
+		padding:0;
+	}
+	body{
+		height:2000px;
+	}
+	.wrap{
+		position:fixed;
+		top:150px;
+		left:50%;
+		margin-left:-150px;
+		width:300px;
+		height:500px;
+		background-color:red;
+	}
+	.box{
+		position:absolute;
+		left:50px;
+		right:50px;
+		width:100px;
+		height:100px;
+		background-color:green;
+	}
+  </style>
+ </head>
+ <body>
+	<!--
+		position:fixed  固定定位  相对于整个body来定位；
+			脱离文档流
+		
+	-->
+	<span class="wrap">
+		<div class="box">123</div>
+	</span>
+	
+ </body>
+</html>

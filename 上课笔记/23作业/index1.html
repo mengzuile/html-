@@ -1,0 +1,150 @@
+<!doctype html>
+<html lang="en">
+ <head>
+  <meta charset="UTF-8">
+  <meta name="Generator" content="EditPlus®">
+  <meta name="Author" content="">
+  <meta name="Keywords" content="">
+  <meta name="Description" content="">
+  <title>Document</title>
+  <style type="text/css">
+	*{
+		margin:0;
+		padding:0;
+	}
+	.wrap{
+		position:Relative;
+		width:500px;
+		height:500px;
+		background-color:pink;
+		margin:50px auto;
+	}
+	.wrap .flower{
+		position:absolute;
+		top:110px;
+		left:140px;
+		width:120px;
+		height:115px;
+		background-color:#c9f;
+		border-radius:0 100%;
+		transform-origin:right bottom;
+	}
+	.wrap .flower:after{
+		position:Absolute;
+		left: 48px;
+		bottom: 58px;
+		z-index:20;
+		content:"";
+		width:10px;
+		height:10px;
+		border-radius:50%;
+		background-color:#Ffc;
+		box-shadow: 0px 0px 5px 5px #ff9;
+	}
+	.wrap .flower:before{
+		position:absolute;
+		right:8px;
+		bottom:4px;
+		z-index:20;
+		content:"";
+		width:70px;
+		height:2px;
+		background-color:#c6f;
+		transform:rotate(45deg);
+		transform-origin:right bottom;
+	}
+	@keyframes run1{
+		10%{
+			transform:rotate(36deg);
+		}
+		100%{
+			transform:rotate(36deg);
+		}
+	}
+	.wrap .f1{
+		animation:run1 5s alternate infinite;
+	}
+	@keyframes run2{
+		20%{
+			transform:rotate(72deg);
+		}
+		100%{
+			transform:rotate(72deg);
+		}
+	}
+	.wrap .f2{
+		animation:run2 5s alternate infinite;
+	}
+	@keyframes run3{
+		30%{
+			transform:rotate(108deg);
+		}
+		100%{
+			transform:rotate(108deg);
+		}
+	}
+	.wrap .f3{
+		animation:run3 5s alternate infinite;
+	}
+	@keyframes run4{
+		30%{
+			transform:rotate(144deg);
+		}
+		100%{
+			transform:rotate(144deg);
+		}
+	}
+	.wrap .f4{
+		animation:run4 5s alternate infinite;
+	}
+	@keyframes run5{
+		40%{
+			transform:rotate(180deg);
+		}
+		100%{
+			transform:rotate(180deg);
+		}
+	}
+	.wrap .f5{
+		animation:run5 5s alternate infinite;
+	}
+	@keyframes run5{
+		50%{
+			transform:rotate(216deg);
+		}
+		100%{
+			transform:rotate(216deg);
+		}
+	}
+	.wrap .f6{
+		animation:run5 5s alternate infinite;
+	}
+	@keyframes run6{
+		60%{
+			transform:rotate(252deg);
+		}
+		100%{
+			transform:rotate(252deg);
+		}
+	}
+	.wrap .f7{
+		animation:run6 5s alternate infinite;
+	}
+  </style>
+ </head>
+ <body>
+	<div class="wrap">
+		<div class="flower"></div>
+		<div class="flower f1"></div>
+		<div class="flower f2"></div>
+		<div class="flower f3"></div>
+		<div class="flower f4"></div>
+		<div class="flower f5"></div>
+		<div class="flower f6"></div>
+		<div class="flower f7"></div>
+		<div class="flower f8"></div>
+		<div class="flower f9"></div>
+		<div class="flower f10"></div>
+	</div>
+ </body>
+</html>

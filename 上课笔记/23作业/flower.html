@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <style>
+    * {
+        margin: 0;
+        padding: 0;
+    }
+
+    ul {
+        list-style: none;
+    }
+
+    body {
+        background-color: #eee;
+    }
+
+    .cleafix:after {
+        display: block;
+        content: '';
+        clear: both;
+    }
+
+    @keyframes wind {
+        from {
+            transform: rotate(0);
+        }
+        to {
+            transform: rotate(360deg);
+        }
+    }
+
+    .flower-wrap {
+		position:absolute;
+        width: 424px;
+        height: 424px;
+        margin:auto;
+        position: relative;
+        padding-top: 400px;
+        animation: wind 3s 2s infinite linear;
+        z-index: 2;
+    }
+
+    .flower {
+        width: 212px;
+        height: 212px;
+        border-radius: 212px 0px;
+        background-color: pink;
+        position: absolute;
+        transform-origin: top right;
+        animation-duration: 1s;
+        animation-delay: 1s;
+        animation-fill-mode: forwards;
+        /*border: 1px solid #ecbcc5;*/
+        border: 1px solid #eee;
+        transform: scale(0);
+    }
+	
+	 @keyframes f0 {
+        0% {
+            transform: scale(0);
+        }
+        100% {
+            transform:  scale(1);
+        }
+    }
+    @keyframes f1 {
+        0% {
+            transform: scale(0) rotate(0deg);
+        }
+        100% {
+            transform:  scale(1) rotate(36deg);
+        }
+    }
+
+    @keyframes f2 {
+        0% {
+            transform: scale(0) rotate(0deg);
+        }
+        100% {
+            transform: scale(1) rotate(72deg);
+        }
+    }
+
+    @keyframes f3 {
+        0% {
+            transform: scale(0) rotate(0deg);
+        }
+        100% {
+            transform: scale(1) rotate(108deg);
+        }
+    }
+
+    @keyframes f4 {
+        0% {
+            transform: scale(0) rotate(0deg);
+        }
+        100% {
+            transform: scale(1) rotate(144deg);
+        }
+    }
+
+    @keyframes f5 {
+        0% {
+            transform: scale(0) rotate(0deg);
+        }
+        100% {
+            transform: scale(1) rotate(180deg);
+        }
+    }
+
+    @keyframes f6 {
+        0% {
+            transform: scale(0) rotate(0deg);
+        }
+        100% {
+            transform: scale(1) rotate(216deg);
+        }
+    }
+
+    @keyframes f7 {
+        0% {
+            transform: scale(0) rotate(0deg);
+        }
+        100% {
+            transform: scale(1) rotate(252deg);
+        }
+    }
+
+    @keyframes f8 {
+        0% {
+            transform: scale(0) rotate(0deg);
+        }
+        100% {
+            transform: scale(1) rotate(288deg);
+        }
+    }
+
+    @keyframes f9 {
+        0% {
+            transform: scale(0) rotate(0deg);
+        }
+        100% {
+            transform: scale(1) rotate(324deg);
+        }
+    }
+
+    @keyframes f10 {
+        0% {
+            transform: scale(0) rotate(0deg);
+        }
+        100% {
+            transform: scale(1) rotate(360deg);
+        }
+    }
+
+   .flower1 {
+    	animation-name: f0;
+    }
+    
+    .flower2 {
+        animation-name: f1;
+    }
+    
+    .flower3 {
+        animation-name: f2;
+    }
+    
+    .flower4 {
+        animation-name: f3;
+    }
+    
+    .flower5 {
+        animation-name: f4;
+    }
+    
+    .flower6 {
+        animation-name: f5;
+    }
+    
+    .flower7 {
+        animation-name: f6;
+    }
+    
+    .flower8 {
+        animation-name: f7;
+    }
+    
+    .flower9 {
+        animation-name: f8;
+    }
+    
+    .flower10 {
+        animation-name: f9;
+    }
+
+    .flower-dot {
+        width: 70px;
+        height: 70px;
+        transform: scale(0);
+        background-color: #f6f6b1;
+        position: absolute;
+        border-radius: 100%;
+        animation: show-dot 1s 0.5s forwards;
+        left: 0;
+        right: 0;
+        top: 0;
+        bottom: 0;
+        margin: auto;
+    }
+
+   @keyframes show-dot {
+        from {
+            transform: scale(0);
+        }
+        to {
+            transform: scale(1);
+        }
+    }
+
+    .tree {
+        width: 20px;
+        height: 0;
+        background-color: #a79999;
+        animation: grow 1s forwards;
+        transform-origin: bottom;
+        left: 0;
+        right: 0;
+        position: absolute;
+        margin: auto;
+        bottom:0;
+    }
+     @keyframes grow {
+        from {
+           height: 0;
+        }
+        to {
+           height: 400px;
+        }
+    }
+    </style>
+</head>
+
+<body>
+    <div class="flower-wrap">
+        <div class="flower flower1"></div>
+        <div class="flower flower2"></div>
+        <div class="flower flower3"></div>
+        <div class="flower flower4"></div>
+        <div class="flower flower5"></div>
+        <div class="flower flower6"></div>
+        <div class="flower flower7"></div>
+        <div class="flower flower8"></div>
+        <div class="flower flower9"></div>
+        <div class="flower flower10"></div>
+        <div class="flower-dot"></div>
+    </div>
+    <div class="tree"></div>
+</body>
+
+</html>

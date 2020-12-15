@@ -1,0 +1,461 @@
+<!DOCTYPE html><html><head><title>22-第二十二章- 基础HTML代码规范 及Emmet</title><meta charset='utf-8'><link href='https://dn-maxiang.qbox.me/res-min/themes/marxico.css' rel='stylesheet'><style>
+.note-content  {font-family: 'Helvetica Neue', Arial, 'Hiragino Sans GB', STHeiti, 'Microsoft YaHei', 'WenQuanYi Micro Hei', SimSun, Song, sans-serif;}
+
+</style></head><body><div id='preview-contents' class='note-content'>
+                        
+                    
+
+<h1 id="22-第二十二章-基础html代码规范-及emmet">22-第二十二章- 基础HTML代码规范 及Emmet</h1>
+
+<p></p>
+
+
+
+<h2 id="一html规范">一、HTML规范</h2>
+
+<h4 id="1-html代码书写规范">1、 HTML代码书写规范</h4>
+
+<blockquote>
+  <p>1）所有书写均在英文半角状态下的小写； <br>
+  2）所有标签必须闭合； <br>
+  3）统一用tab键缩进； <br>
+  4）属性值必须带引号（单引或双引）； <br>
+  5）ul,li/ol,li/dl,dt,dd拥有父子级关系的标签； <br>
+  6）p,dt,h标签  里面不能嵌套块属性标签； <br>
+  7）a标签不能嵌套a； <br>
+  8）内联元素不能嵌套块；（a除外） <br>
+  9）对“&lt;”“&gt;”之类的特殊符号进行实体转义`&lt;&gt;</p>
+</blockquote>
+
+<hr>
+
+<h2 id="2html注释">2、HTML注释</h2>
+
+<blockquote>
+  <p>1、单行注释：<code>&lt;!-- 注释内容 --&gt;</code> <br>
+  2、多行注释：</p>
+</blockquote>
+
+<pre class="prettyprint with-line-number hljs-dark"><code class="hljs xml"><div class="hljs-line"><span class="hljs-comment line-number">1.</span><span class="hljs-comment">&lt;!-- 
+</span></div><div class="hljs-line"><span class="hljs-comment line-number">2.</span>    注释内容一
+</div><div class="hljs-line"><span class="hljs-comment line-number">3.</span>    注释内容二
+</div><div class="hljs-line"><span class="hljs-comment line-number">4.</span>    注释内容三
+</div><div class="hljs-line"><span class="hljs-comment line-number">5.</span>--&gt;
+</div></code></pre>
+
+
+
+<pre class="prettyprint with-line-number hljs-dark"><code class="hljs xml"><div class="hljs-line"><span class="hljs-comment line-number">1.</span><span class="hljs-comment">&lt;!-- 
+</span></div><div class="hljs-line"><span class="hljs-comment line-number">2.</span>*   注释内容一
+</div><div class="hljs-line"><span class="hljs-comment line-number">3.</span>*   注释内容二
+</div><div class="hljs-line"><span class="hljs-comment line-number">4.</span>*   注释内容三
+</div><div class="hljs-line"><span class="hljs-comment line-number">5.</span>--&gt;
+</div></code></pre>
+
+
+
+<h2 id="3-html命名规范">3、 HTML命名规范</h2>
+
+<p>1）命名的两种方式：  </p>
+
+<blockquote>
+  <p>ID命名：   具有唯一性(身份证号) 相同的ID名只能在页面中出现一次， 并且ID只能有一个名字 <br>
+      class类名：class的类名可以在页面中重复出现，并且一个元素可以有多个类名,(中间以空格分开)</p>
+</blockquote>
+
+<p>2）HTML命名规范：</p>
+
+<blockquote>
+  <p>A  用小写字母 <br>
+      B   以英文开头 可以包含（英文字母  -   _  数字） <br>
+      C   （见名知意）</p>
+</blockquote>
+
+<p>3）拓展名写法:</p>
+
+<blockquote>
+  <p>A  加  -  或   _ <br>
+      （腾讯：下划线 ’ _ ’ 禁止出现在class命名中，统一使用 ‘-’ 连字符） <br>
+      B       驼峰命名 第二单词大写 <br>
+      （腾讯：禁止驼峰式命名）</p>
+</blockquote>
+
+<hr>
+
+<h2 id="4常用类id命名举列">4、常用类/ID命名举列</h2>
+
+<p>常用类的命名应尽量以常见英文单词为准，做到通俗易懂，并在适当的地方加以注释。 部分命名解释约定： </p>
+
+<blockquote>
+  <p>页头：        header <br>
+  页面主体：   main <br>
+  页脚：     footer  <br>
+  登录条：    loginBar <br>
+  登陆：     login <br>
+  标志：     logo <br>
+  侧栏：     sideBar  <br>
+  广告：     banner <br>
+  导航：     nav <br>
+  子导航：    subNav <br>
+   顶导航：   topNav  <br>
+  边导航：    sidebar <br>
+  左导航：    leftsideBar <br>
+  右导航：    rightsideBar  <br>
+  菜单：     menu <br>
+  子菜单：    subMenu <br>
+  搜索：     search <br>
+  滚动：     scroll <br>
+  功能区：　　  shop(如购物车，收银台)  <br>
+  标签页：    tab <br>
+  文章列表：   list <br>
+  提示信息：   msg <br>
+  小技巧：    tips <br>
+  栏目标题：   title     </p>
+</blockquote>
+
+<hr>
+
+<blockquote>
+  <p>加入：        joinus <br>
+  指南：     guild <br>
+  服务：     service <br>
+  热点：     hot <br>
+  新闻：     news <br>
+  下载：     download <br>
+  注册：     regsiter  <br>
+  状态：     status </p>
+</blockquote>
+
+<hr>
+
+<blockquote>
+  <p>投票：        vote  <br>
+  合作伙伴：   partner <br>
+  友情链接：   friendLink <br>
+  版权：     copyRight <br>
+  商　标：    label <br>
+  搜索：     search <br>
+  注释：　　　  note  <br>
+  面包屑：    breadCrumb(即页面所处位置导航提示)</p>
+</blockquote>
+
+<hr>
+
+<blockquote>
+  <p>容器：        container  <br>
+  外　套：    wrap <br>
+  内容：     content  <br>
+  菜单内容1：  menu1Content  <br>
+  菜单容量：　  menuContainer <br>
+  按钮：     btn  <br>
+  当前：     current        </p>
+</blockquote>
+
+<hr>
+
+<h2 id="5图片">5、图片</h2>
+
+<p>1）所有img元素必须加上width height alt属性,修饰性图片alt值留空 <br>
+2）图片命名</p>
+
+<blockquote>
+  <ul><li>A) 图片后缀命名一律小写。</li>
+  <li>B) 使用间隔符 - 进行连接。 <br>
+  <ul>
+  <li>一般背景图片以bg-开头，</li>
+  <li>按钮图片以btn-开头，</li>
+  <li>图标图片以icon-开头，</li>
+  <li>聚合图以spr-开头，后跟英文单词，如果名称过长，适当使用缩写</li></ul></li>
+  </ul>
+</blockquote>
+
+<hr>
+
+<h2 id="6文件命名">6、文件命名</h2>
+
+<blockquote>
+  <p>1）文件名中只可由英文字母a~z、排序数字0~9或间隔符-组成。 <br>
+  2）蚊件名中禁止包含特殊符号，比如空格、$等 <br>
+  3）文件名统一使用小写字母，文件名使用英文名词命名，或英文简写</p>
+</blockquote>
+
+<hr>
+
+<h2 id="二css规范">二、css规范</h2>
+
+<h4 id="1-代码风格">1、 代码风格</h4>
+
+<p>1）腾讯：css属性值需要用到引号时，统一使用<code>单引号</code></p>
+
+<pre class="prettyprint with-line-number hljs-dark"><code class="hljs css"><div class="hljs-line"><span class="hljs-comment line-number">1.</span><span class="hljs-selector-tag">selectors</span>{ <span class="hljs-attribute">font-family</span>:<span class="hljs-string">'\5FAE\8F6F\96C5\9ED1'</span>;}
+</div></code></pre>
+
+<p>2）为单个css选择器或新申明开启新行</p>
+
+<pre class="prettyprint with-line-number hljs-dark"><code class="hljs stylus"><div class="hljs-line"><span class="hljs-comment line-number">1.</span><span class="hljs-selector-class">.home-count</span> <span class="hljs-selector-class">.hd</span>,
+</div><div class="hljs-line"><span class="hljs-comment line-number">2.</span><span class="hljs-selector-class">.content-title</span>,
+</div><div class="hljs-line"><span class="hljs-comment line-number">3.</span><span class="hljs-selector-class">.select-game-title</span> .title{}
+</div></code></pre>
+
+<p>3）css属性<code>书写顺序</code> <br>
+建议遵循：布局定位属性 自身属性 文本属性 其他属性 CSS3属性</p>
+
+<ul><li>a  布局定位属性</li>
+</ul>
+
+<blockquote>
+  <p>display list-style  position（相应的 top,right,bottom,left）  float  clear   visibility /overflow</p>
+</blockquote>
+
+<ul><li>b 自身属性 </li>
+</ul>
+
+<blockquote>
+  <p>width  height  margin  padding  border  background</p>
+</blockquote>
+
+<ul><li>c 文本属性 </li>
+</ul>
+
+<blockquote>
+  <p>color font  text-decoration text-align  vertical-align  white- space  break-word</p>
+</blockquote>
+
+<ul><li>d 其他（CSS3）  </li>
+</ul>
+
+<blockquote>
+  <p>content  cursor border-radius  box-shadow  text-shadow  background:linear-gradient …</p>
+</blockquote>
+
+<hr>
+
+<p>4）私有属性要写前面，标准写在后面</p>
+
+
+
+<pre class="prettyprint with-line-number hljs-dark"><code class="hljs css"><div class="hljs-line"><span class="hljs-comment line-number">1.</span><span class="hljs-selector-tag">selectors</span>{
+</div><div class="hljs-line"><span class="hljs-comment line-number">2.</span>    <span class="hljs-attribute">background</span>: <span class="hljs-built_in">-webkit-linear-gradient</span>(top, #ffffff 0%,#eff2f4 );
+</div><div class="hljs-line"><span class="hljs-comment line-number">3.</span>    <span class="hljs-attribute">background</span>: <span class="hljs-built_in">-moz-linear-gradient</span>(top, #ffffff 0%, #eff2f4 );
+</div><div class="hljs-line"><span class="hljs-comment line-number">4.</span>    <span class="hljs-attribute">background</span>: <span class="hljs-built_in">-ms-linear-gradient</span>(top, #ffffff 0%,#eff2f4 );
+</div><div class="hljs-line"><span class="hljs-comment line-number">5.</span>    <span class="hljs-attribute">background</span>: <span class="hljs-built_in">-o-linear-gradient</span>(top, #ffffff 0%,#eff2f4 );
+</div><div class="hljs-line"><span class="hljs-comment line-number">6.</span>    <span class="hljs-attribute">background</span>: <span class="hljs-built_in">linear-gradient</span>(to bottom, #ffffff 0%,#eff2f4 );
+</div><div class="hljs-line"><span class="hljs-comment line-number">7.</span>    <span class="hljs-attribute">filter</span>: progid:DXImageTransform.Microsoft.<span class="hljs-built_in">gradient</span>( startColorstr=<span class="hljs-string">'#ffffff'</span>, endColorstr=<span class="hljs-string">'#eff2f4'</span>,GradientType=0 );
+</div><div class="hljs-line"><span class="hljs-comment line-number">8.</span>}
+</div></code></pre>
+
+<p>5)删除css属性值为0的单位</p>
+
+
+
+<pre class="prettyprint with-line-number hljs-dark"><code class="hljs css"><div class="hljs-line"><span class="hljs-comment line-number">1.</span><span class="hljs-comment">/* 不推荐 */</span> 
+</div><div class="hljs-line"><span class="hljs-comment line-number">2.</span><span class="hljs-selector-tag">selectors</span>{ <span class="hljs-attribute">margin</span>:<span class="hljs-number">0px</span>; <span class="hljs-attribute">padding</span>:<span class="hljs-number">0px</span>;}
+</div><div class="hljs-line"><span class="hljs-comment line-number">3.</span><span class="hljs-comment">/* 推荐 */</span> 
+</div><div class="hljs-line"><span class="hljs-comment line-number">4.</span><span class="hljs-selector-tag">selectors</span>{ <span class="hljs-attribute">margin</span>:<span class="hljs-number">0</span>; <span class="hljs-attribute">padding</span>:<span class="hljs-number">0</span>;}
+</div></code></pre>
+
+<p>6) css属性 要使用Tab键缩进</p>
+
+
+
+<pre class="prettyprint with-line-number hljs-dark"><code class="hljs css"><div class="hljs-line"><span class="hljs-comment line-number">1.</span><span class="hljs-selector-tag">selectors</span>{
+</div><div class="hljs-line"><span class="hljs-comment line-number">2.</span>    <span class="hljs-attribute">height</span>:  <span class="hljs-number">30px</span>;
+</div><div class="hljs-line"><span class="hljs-comment line-number">3.</span>    <span class="hljs-attribute">width</span>: <span class="hljs-number">200px</span>;
+</div><div class="hljs-line"><span class="hljs-comment line-number">4.</span>}
+</div></code></pre>
+
+<p>7) css属性与值写法（根据个人习惯选择），属性与值之间是否有空格</p>
+
+
+
+<pre class="prettyprint with-line-number hljs-dark"><code class="hljs css"><div class="hljs-line"><span class="hljs-comment line-number">1.</span><span class="hljs-selector-tag">selectors</span>{
+</div><div class="hljs-line"><span class="hljs-comment line-number">2.</span>    <span class="hljs-attribute">height </span>: <span class="hljs-number">30px</span>;
+</div><div class="hljs-line"><span class="hljs-comment line-number">3.</span>    <span class="hljs-attribute">padding-bottom </span>: <span class="hljs-number">10px</span>;
+</div><div class="hljs-line"><span class="hljs-comment line-number">4.</span>    <span class="hljs-attribute">border-bottom </span>: <span class="hljs-number">1px</span> solid <span class="hljs-number">#858585</span>;
+</div><div class="hljs-line"><span class="hljs-comment line-number">5.</span>    <span class="hljs-attribute">margin-bottom </span>: <span class="hljs-number">10px</span>;
+</div><div class="hljs-line"><span class="hljs-comment line-number">6.</span>}
+</div></code></pre>
+
+<hr>
+
+
+
+<h4 id="二-注释">二、 注释</h4>
+
+<p>1）行间注释</p>
+
+
+
+<pre class="prettyprint with-line-number hljs-dark"><code class="hljs css"><div class="hljs-line"><span class="hljs-comment line-number">1.</span><span class="hljs-selector-class">.search</span>{<span class="hljs-attribute">background</span>: <span class="hljs-built_in">url</span>(<span class="hljs-string">''</span>)  no-repeat; <span class="hljs-comment">/*定义搜索框的背景*/</span>}
+</div></code></pre>
+
+<p>2 )  整段注释</p>
+
+
+
+<pre class="prettyprint with-line-number hljs-dark"><code class="hljs css"><div class="hljs-line"><span class="hljs-comment line-number">1.</span> <span class="hljs-comment">/*===== 搜索条 =====*/</span>
+</div><div class="hljs-line"><span class="hljs-comment line-number">2.</span><span class="hljs-selector-class">.search</span> {<span class="hljs-attribute">background</span>: <span class="hljs-built_in">url</span>(../img/search.gif) no-repeat;}
+</div><div class="hljs-line"><span class="hljs-comment line-number">3.</span><span class="hljs-comment">/*===== 搜索条结束 =====*/</span>
+</div></code></pre>
+
+<hr>
+
+<h2 id="三emmet-htmlcss代码快速编写神器">三、Emmet HTML/CSS代码快速编写神器</h2>
+
+<p>Emmet (前身为 Zen Coding)</p>
+
+<p>使用前提：</p>
+
+<blockquote>
+  <p>一 editplus下找到<code>Zen Coding</code>菜单 <br>
+       勾选 使用<code>Emmet</code>和<code>Tab键拓展</code>  <br>
+  二初始化,如果不是创建的html文本，需要保存html文档才能使用</p>
+</blockquote>
+
+<p>使用技巧：写入代码，然后按<code>Tab</code>键，</p>
+
+<blockquote>
+  <p>创建HTML模板 <br>
+  代码：!或html:5 <br>
+  缩写：div <br>
+  缩写： #header <br>
+  缩写： .box <br>
+  缩写： div#box.box <br>
+  缩写：  div.box.minbo</p>
+</blockquote>
+
+<hr>
+
+<p>属性：a<code>[href=#]</code> <br>
+<a href="#"></a></p>
+
+<p>文本：<code>{}</code></p>
+
+<blockquote>
+  <p>a{Click me}</p>
+</blockquote>
+
+<p>后代：<code>&gt;</code></p>
+
+<blockquote>
+  <p>缩写：nav&gt;ul&gt;li</p>
+</blockquote>
+
+<p>兄弟：<code>+</code></p>
+
+<blockquote>
+  <p>缩写：div+p+a</p>
+</blockquote>
+
+<p>上级：<code>^</code></p>
+
+<blockquote>
+  <p>缩写：div+div&gt;p&gt;span+em^a <br>
+  缩写：div+div&gt;p&gt;span+em^^a</p>
+</blockquote>
+
+<p>分组：<code>()</code></p>
+
+<blockquote>
+  <p>缩写：div&gt;(header&gt;ul&gt;li*2&gt;a)+footer&gt;p</p>
+</blockquote>
+
+<p>乘法：<code>*</code></p>
+
+<blockquote>
+  <p>缩写：ul&gt;li*5</p>
+</blockquote>
+
+<hr>
+
+<p>自增符号：<code>$</code> <br>
+缩写：<code>ul&gt;li.item$*5</code></p>
+
+<pre class="prettyprint with-line-number hljs-dark"><code class="hljs javascript"><div class="hljs-line"><span class="hljs-comment line-number">1.</span>&lt;ul&gt;
+</div><div class="hljs-line"><span class="hljs-comment line-number">2.</span>    <span class="xml"><span class="hljs-tag">&lt;<span class="hljs-name">li</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"item1"</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span></span>
+</div><div class="hljs-line"><span class="hljs-comment line-number">3.</span>    &lt;li <span class="hljs-class"><span class="hljs-keyword">class</span></span>=<span class="hljs-string">"item2"</span>&gt;<span class="xml"><span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span></span>
+</div><div class="hljs-line"><span class="hljs-comment line-number">4.</span>    &lt;li <span class="hljs-class"><span class="hljs-keyword">class</span></span>=<span class="hljs-string">"item3"</span>&gt;<span class="xml"><span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span></span>
+</div><div class="hljs-line"><span class="hljs-comment line-number">5.</span>    &lt;li <span class="hljs-class"><span class="hljs-keyword">class</span></span>=<span class="hljs-string">"item4"</span>&gt;<span class="xml"><span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span></span>
+</div><div class="hljs-line"><span class="hljs-comment line-number">6.</span>    &lt;li <span class="hljs-class"><span class="hljs-keyword">class</span></span>=<span class="hljs-string">"item5"</span>&gt;<span class="xml"><span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span></span>
+</div><div class="hljs-line"><span class="hljs-comment line-number">7.</span>&lt;<span class="hljs-regexp">/ul&gt;</span>
+</div></code></pre>
+
+<p>缩写：<code>h$[title=item$]{Header $}*3</code></p>
+
+<pre class="prettyprint with-line-number hljs-dark"><code class="hljs xml"><div class="hljs-line"><span class="hljs-comment line-number">1.</span>    <span class="hljs-tag">&lt;<span class="hljs-name">h1</span> <span class="hljs-attr">title</span>=<span class="hljs-string">"item1"</span>&gt;</span>Header 1<span class="hljs-tag">&lt;/<span class="hljs-name">h1</span>&gt;</span>
+</div><div class="hljs-line"><span class="hljs-comment line-number">2.</span><span class="hljs-tag">&lt;<span class="hljs-name">h2</span> <span class="hljs-attr">title</span>=<span class="hljs-string">"item2"</span>&gt;</span>Header 2<span class="hljs-tag">&lt;/<span class="hljs-name">h2</span>&gt;</span>
+</div><div class="hljs-line"><span class="hljs-comment line-number">3.</span><span class="hljs-tag">&lt;<span class="hljs-name">h3</span> <span class="hljs-attr">title</span>=<span class="hljs-string">"item3"</span>&gt;</span>Header 3<span class="hljs-tag">&lt;/<span class="hljs-name">h3</span>&gt;</span>
+</div></code></pre>
+
+<p>缩写：<code>ul&gt;li.item$$$*5</code></p>
+
+<pre class="prettyprint with-line-number hljs-dark"><code class="hljs javascript"><div class="hljs-line"><span class="hljs-comment line-number">1.</span>    &lt;ul&gt;
+</div><div class="hljs-line"><span class="hljs-comment line-number">2.</span>    <span class="xml"><span class="hljs-tag">&lt;<span class="hljs-name">li</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"item001"</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span></span>
+</div><div class="hljs-line"><span class="hljs-comment line-number">3.</span>    &lt;li <span class="hljs-class"><span class="hljs-keyword">class</span></span>=<span class="hljs-string">"item002"</span>&gt;<span class="xml"><span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span></span>
+</div><div class="hljs-line"><span class="hljs-comment line-number">4.</span>    &lt;li <span class="hljs-class"><span class="hljs-keyword">class</span></span>=<span class="hljs-string">"item003"</span>&gt;<span class="xml"><span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span></span>
+</div><div class="hljs-line"><span class="hljs-comment line-number">5.</span>    &lt;li <span class="hljs-class"><span class="hljs-keyword">class</span></span>=<span class="hljs-string">"item004"</span>&gt;<span class="xml"><span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span></span>
+</div><div class="hljs-line"><span class="hljs-comment line-number">6.</span>    &lt;li <span class="hljs-class"><span class="hljs-keyword">class</span></span>=<span class="hljs-string">"item005"</span>&gt;<span class="xml"><span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span></span>
+</div><div class="hljs-line"><span class="hljs-comment line-number">7.</span>&lt;<span class="hljs-regexp">/ul&gt;</span>
+</div></code></pre>
+
+<hr>
+
+<p>自增符号：<code>$</code> <br>
+缩写：<code>ul&gt;li.item$@-*5</code></p>
+
+<pre class="prettyprint with-line-number hljs-dark"><code class="hljs javascript"><div class="hljs-line"><span class="hljs-comment line-number">1.</span>&lt;ul&gt;
+</div><div class="hljs-line"><span class="hljs-comment line-number">2.</span>    <span class="xml"><span class="hljs-tag">&lt;<span class="hljs-name">li</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"item5"</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span></span>
+</div><div class="hljs-line"><span class="hljs-comment line-number">3.</span>    &lt;li <span class="hljs-class"><span class="hljs-keyword">class</span></span>=<span class="hljs-string">"item4"</span>&gt;<span class="xml"><span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span></span>
+</div><div class="hljs-line"><span class="hljs-comment line-number">4.</span>    &lt;li <span class="hljs-class"><span class="hljs-keyword">class</span></span>=<span class="hljs-string">"item3"</span>&gt;<span class="xml"><span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span></span>
+</div><div class="hljs-line"><span class="hljs-comment line-number">5.</span>    &lt;li <span class="hljs-class"><span class="hljs-keyword">class</span></span>=<span class="hljs-string">"item2"</span>&gt;<span class="xml"><span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span></span>
+</div><div class="hljs-line"><span class="hljs-comment line-number">6.</span>    &lt;li <span class="hljs-class"><span class="hljs-keyword">class</span></span>=<span class="hljs-string">"item1"</span>&gt;<span class="xml"><span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span></span>
+</div><div class="hljs-line"><span class="hljs-comment line-number">7.</span>&lt;<span class="hljs-regexp">/ul&gt;</span>
+</div></code></pre>
+
+<p>缩写：<code>ul&gt;li.item$@3*5</code></p>
+
+<pre class="prettyprint with-line-number hljs-dark"><code class="hljs javascript"><div class="hljs-line"><span class="hljs-comment line-number">1.</span>&lt;ul&gt;
+</div><div class="hljs-line"><span class="hljs-comment line-number">2.</span>    <span class="xml"><span class="hljs-tag">&lt;<span class="hljs-name">li</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"item3"</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span></span>
+</div><div class="hljs-line"><span class="hljs-comment line-number">3.</span>    &lt;li <span class="hljs-class"><span class="hljs-keyword">class</span></span>=<span class="hljs-string">"item4"</span>&gt;<span class="xml"><span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span></span>
+</div><div class="hljs-line"><span class="hljs-comment line-number">4.</span>    &lt;li <span class="hljs-class"><span class="hljs-keyword">class</span></span>=<span class="hljs-string">"item5"</span>&gt;<span class="xml"><span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span></span>
+</div><div class="hljs-line"><span class="hljs-comment line-number">5.</span>    &lt;li <span class="hljs-class"><span class="hljs-keyword">class</span></span>=<span class="hljs-string">"item6"</span>&gt;<span class="xml"><span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span></span>
+</div><div class="hljs-line"><span class="hljs-comment line-number">6.</span>    &lt;li <span class="hljs-class"><span class="hljs-keyword">class</span></span>=<span class="hljs-string">"item7"</span>&gt;<span class="xml"><span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span></span>
+</div><div class="hljs-line"><span class="hljs-comment line-number">7.</span>&lt;<span class="hljs-regexp">/ul&gt;</span>
+</div></code></pre>
+
+<hr>
+
+<p>缩写：<code>link</code> <br>
+缩写：<code>link:css</code> <br>
+缩写：link:print <br>
+缩写：<code>link:favicon</code> <br>
+缩写：<code>link:touch</code></p>
+
+<p>缩写：<code>meta:utf</code> <br>
+缩写：<code>meta:vp</code></p>
+
+
+
+<pre class="prettyprint with-line-number hljs-dark"><code class="hljs nix"><div class="hljs-line"><span class="hljs-comment line-number">1.</span>&lt;meta <span class="hljs-attr">name="viewport"</span> <span class="hljs-attr">content="width=device-width,</span> <span class="hljs-attr">user-scalable=no,</span> <span class="hljs-attr">initial-scale=1.0,</span> <span class="hljs-attr">maximum-scale=1.0,</span> <span class="hljs-attr">minimum-scale=1.0"</span> /&gt;
+</div></code></pre>
+
+<p>缩写：<code>meta:compat</code></p>
+
+
+
+<pre class="prettyprint with-line-number hljs-dark"><code class="hljs xml"><div class="hljs-line"><span class="hljs-comment line-number">1.</span><span class="hljs-tag">&lt;<span class="hljs-name">meta</span> <span class="hljs-attr">http-equiv</span>=<span class="hljs-string">"X-UA-Compatible"</span> <span class="hljs-attr">content</span>=<span class="hljs-string">"IE=7"</span> /&gt;</span>
+</div></code></pre>
+
+<p>缩写：<code>script:src</code> <br>
+缩写：form:get</p>
+
+<p>缩写：<code>inp</code> <br>
+缩写：<code>input:search</code></p>
+
+
+
+<pre class="prettyprint with-line-number hljs-dark"><code class="hljs applescript"><div class="hljs-line"><span class="hljs-comment line-number">1.</span>&lt;input type=<span class="hljs-string">"search"</span> <span class="hljs-built_in">name</span>=<span class="hljs-string">""</span> <span class="hljs-built_in">id</span>=<span class="hljs-string">""</span> /&gt;
+</div></code></pre>
+
+<p>缩写：<code>input:email</code> <br>
+```</p></div></body></html>

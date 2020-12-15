@@ -1,0 +1,75 @@
+<!doctype html>
+<html lang="en">
+ <head>
+  <meta charset="UTF-8">
+  <meta name="Generator" content="EditPlus®">
+  <meta name="Author" content="">
+  <meta name="Keywords" content="">
+  <meta name="Description" content="">
+  <title>Document</title>
+  <style type="text/css">
+	*{
+		margin:0;
+		padding:0;
+	}
+	[class]{
+		width:100px;
+		height:100px;
+		background-color:red;
+	}
+	[class = "wrap"]{
+		background-color:green;
+	}
+	[class ~= "wrap1"]{
+		background-color:pink;
+	}
+	[class |="wrap2"]{
+		background-color:purple;
+	}
+	[class *="2"]{
+		background-color:yellow;
+	}
+	[class ^="wrap2-"]{
+		background-color:blue;
+	}
+	[class $= "p3"]{
+		background-color:#000;
+	}
+	/*
+		*
+		id  #
+		class .
+		标签  div
+		后代 div p
+		兄弟选择器 div + p
+		毗邻： div ~ p
+		群组： div,p
+		子代   div > p
+		[attr]  	匹配所有具有att属性的
+		[att=val]	匹配所有att属性等于“val”的
+		[att~=val]	匹配所有att属性包含“val”或者等于“val”的(val必须是一个完整词)
+		[att|=val]	匹配所有att属性以val- 开头的或等于“val”（比如说zh-cn）
+		[att*=val]	匹配所有att属性 包含’val’的 (val可以是字母)
+		[att^=val]	匹配所有att属性 ‘val’开头的
+	*/
+  </style>
+ </head>
+ <body>
+
+	<div class>
+		
+	</div>
+	<div class="wrap" id="">
+		
+	</div>
+	<div class="box1 wrap1  ">
+		
+	</div>
+	<div class="wrap2-box15-jioajxdioa">
+		
+	</div>
+	<div class="arap3">
+		
+	</div>
+ </body>
+</html>

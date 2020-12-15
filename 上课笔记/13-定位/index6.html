@@ -1,0 +1,62 @@
+<!doctype html>
+<html lang="en">
+ <head>
+  <meta charset="UTF-8">
+  <meta name="Generator" content="EditPlus®">
+  <meta name="Author" content="">
+  <meta name="Keywords" content="">
+  <meta name="Description" content="">
+  <title>Document</title>
+  <style type="text/css">
+	*{
+		margin:0;
+		padding:0;
+	}
+	.wrap{
+		position:relative;
+		z-index:3;
+		width:500px;
+		height:500px;
+		background-color:red;
+	}
+	.box{
+		position:absolute;
+		z-index:3;
+		width:100px;
+		height:100px;
+		background-color:green;
+	}
+	.wrap1{
+		position:relative;
+		z-index:3;
+		width:500px;
+		height:500px;
+		background-color:purple;
+	}
+	.box1{
+		position:absolute;
+		z-index:1;
+		top:-450px;
+		width:100px;
+		height:100px;
+		background-color:pink;
+	}
+  </style>
+ </head>
+ <body>
+	<!--
+		父子级：
+			如果子元素为负数。并且父级不能加定位，才看不到子元素。
+	-->
+	<div class="wrap">
+		<div class="box">
+			
+		</div>
+	</div>
+	<div class="wrap1">
+		<div class="box1">
+		
+		</div>
+	</div>
+ </body>
+</html>

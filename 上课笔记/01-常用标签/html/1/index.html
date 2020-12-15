@@ -1,0 +1,140 @@
+<!doctype html>
+<html lang="en">
+ <head>
+  <meta charset="UTF-8">
+  <meta name="Author" content="">
+  <meta name="Keywords" content="">
+  <meta name="Description" content="">
+  <title>Document</title>
+ </head>
+ <body>
+	<!--
+		css 层叠样式表；
+		<>
+		HTML  
+			双标签   head body html title
+			单标签： meta  img
+		div   盒子模型
+		p     段落标签 p标签不能嵌套p表签
+		span  区分样式
+		h1   
+		h2
+		h3
+		h4
+		h5
+		h6
+			标题标签 依次变小
+			h1一个网页种只能出现一次
+			h2-h6出现多次
+		列表标签：
+			ul   无序列表    type=""  disc circle square
+				li  列表项
+			ol   有序列表
+				li  列表项
+			dl   自定义列表
+				dt  标题
+				dd  列表内容
+		strong  b		加粗
+		em  i          倾斜
+		em,strong 有个强调作用
+		hr    水平线
+		br 换行
+
+		a  超链接
+			href="路径"			要跳转的地址
+			target=""			打开的方式
+						_self   当前窗口打开
+						_blank  新建窗口
+			锚点： 
+				点击 herf="#name"
+				目标：id="#name"
+		img     图片标签
+			src=""  路径
+				绝对路径
+					从盘符开始找
+				相对路径:
+					从当前文件位置开始找
+						./  当前文件目录
+						../出当前文件夹
+			width="" 宽度
+			height="" 高度
+			alt =""  图片的描述
+
+			
+	引入css的方式：		type=""  a A  i I
+		style=""
+		color:  字体颜色
+	
+	-->
+	<a href="#box">跳转</a>
+	<div>很高兴认识大家
+		<div></div>
+		<p></p>
+	</div>
+	<p style="color:red;" >
+		这是一个<span style="color:green;">段落</span>
+	</p>
+	<a href="#wrap"></a>
+	<h1>h1</h1>
+	<h2>h2</h2>
+	<h3>h3</h3>
+	<h4>h4</h4>
+	<h5>h5</h5>
+	<h6>h6</h6>
+	<ul type="square">
+		<li>浪尘</li>
+		<li>MakeSomeNoise</li>
+		<li>梦幻农夫</li>
+		<li>玉麒麟</li>
+		<li>Kemo</li>
+	</ul>
+	<ol type="I">
+		<li>星辰大海帝国兔</li>
+		<li>MakeSomeNoise：</li>
+		<li>tzkt0368 </li>
+		<li>lucky</li>
+		<li>Kemo</li>
+	</ol>
+	<dl>
+		<dt>小浪老师</dt>
+		<dd>帅</dd>
+		<dd>魅力</dd>
+		<dd>年少有为</dd>
+	</dl>
+	<h1>h1</h1>
+	<h2>h2</h2>
+	<h3>h3</h3>
+	<h4>h4</h4>
+	<h5>h5</h5>
+	<h6>h6</h6>
+	<div id="wrap"></div>
+	<ul type="square">
+		<li>浪尘</li>
+		<li>MakeSomeNoise</li>
+		<li>梦幻农夫</li>
+		<li>玉麒麟</li>
+		<li>Kemo</li>
+	</ul>
+	<ol type="I">
+		<li>星辰大海帝国兔</li>
+		<li>MakeSomeNoise：</li>
+		<li>tzkt0368 </li>
+		<li>lucky</li>
+		<li>Kemo</li>
+	</ol>
+	<dl>
+		<dt>小浪老师</dt>
+		<dd>帅</dd>
+		<dd>魅力</dd>
+		<dd>年少有为</dd>
+	</dl>
+	afei老师，年少有为，代码<b>风骚</b>，<br />效率<strong>恐怖</strong>，风流<i>倜傥</i>，
+	仪表<em>堂堂</em>。
+	<hr />
+	H<sub>2</sub>O;
+	5<sup>3</sup>
+
+	<div id="box"> 123</div>
+	<img src="../../images/1.jpg"  alt="" />
+ </body>
+</html>

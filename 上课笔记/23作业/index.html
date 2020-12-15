@@ -1,0 +1,229 @@
+<!doctype html>
+<html lang="en">
+ <head>
+  <meta charset="UTF-8">
+  <meta name="Generator" content="EditPlus®">
+  <meta name="Author" content="">
+  <meta name="Keywords" content="">
+  <meta name="Description" content="">
+  <title>Document</title>
+  <link rel="stylesheet" href="font/iconfont.css" />
+  <style type="text/css">
+	*{
+		margin:0;
+		padding:0;
+	}
+	a{
+		text-decoration:none;
+	}
+	li{
+		list-style:none;
+	}
+	body{
+		font: 12px/1.5 tahoma,arial,"\5b8b\4f53";
+	}
+	.header{
+		height:27px;
+		background-color:#F2F2F2;
+	}
+
+	.header .container{
+		position:Relative;
+		width:990px;
+		height:27px;
+		line-height:27px;
+		margin:auto;
+	}
+	.header  a{
+		color:#999;
+		margin-right:10px;
+	}
+	.header a:hover{
+		color:#ff0036;
+		text-decoration:underline;
+	}
+	.header .h-c-left em{
+		color:#999;
+		font-style:normal;
+		margin-right:10px;
+	}
+	.header .iconfont{
+		font-size:14px;
+		color:#ff0036;
+		margin-right:5px;
+	}
+	.header .h-c-right{
+		position:absolute;
+		right:0;
+		top:0;
+		
+	}
+	.header .h-c-right li{
+		position:relative;
+		
+		float:left;
+		
+	}
+	.header .h-c-right li.menu{
+		
+	}
+	.header .h-c-right li.menu:after{
+		position:absolute;
+		z-index:10;
+		top: 12px;
+		right: 2px;
+		content:"";
+		width:0;
+		height:0;
+		border:3px solid transparent;
+		border-bottom-color:#999;
+		border-top:none;
+		transition:.5s;
+		
+	}
+	.header .h-c-right li:hover:after{
+		transform:rotate(180deg);
+	}
+	.header .h-c-right li.menu:hover{
+		background-color:#FFF;
+	}
+	.header .h-c-right a{
+		margin:0;
+		padding:0 10px;
+	}
+	.header .h-c-right li.menu > a{
+		position:relative;
+		z-index:10;
+		display:block;
+		
+		height:27px;
+		background-color:#F2F2F2;
+		/* background-color:#FFF; */
+		
+	}
+	.header .h-c-right li.menu:hover a{
+			background-color:#FFF;
+	}
+	.header .h-c-right li{
+		color:#666;
+	}
+	.header .h-c-right li:hover .hide{
+		display:block;
+	}
+	.header .h-c-right .hide{
+		display:none;
+		position:absolute;
+		top:25px;
+		left:-1px;
+		z-index:1;
+		width:96px;
+		border:1px solid #eee;
+		text-align:Center;
+		line-height:30px;
+		
+	}
+	.header .h-c-right .hide a{
+		display:block;
+	}
+	.header .h-c-right .hide1{
+		top:26px;
+		left:auto;
+		right:0;
+		width:130px;
+		padding:5px;
+		border:1px solid #eee;
+		text-align:left;
+		font-size:12px;
+		color:#666;
+	}
+	.header .h-c-right .bottom{
+		border-bottom:1px dotted #666;
+	}
+	.header .h-c-right .top{
+		border-bottom:1px dotted #666;
+	}
+	.header .h-c-right .title{
+		font-weight:bold;
+	}
+	.header .h-c-right .desc{
+		overflow:hidden;
+		padding-bottom:5px;
+	}
+	.header .h-c-right .hide1 span{
+		float:left;
+		width:60px;
+		line-height:20px;
+		text-align:center;
+
+	}
+  </style>
+ </head>
+ <body>
+	<div class="header">
+		<div class="container">
+			<div class="h-c-left">
+				<i class="iconfont icon-zhuye"></i>
+				<a href="" class="logo">天猫首页</a>
+				<em>喵，欢迎来天猫</em>
+				<a href="">请登录</a>
+				<a href="">免费注册</a>
+			</div>
+			<div class="h-c-right">
+				<ul>
+					<li class="menu">
+						<a>我的淘宝</a>
+						<div class="hide">
+							<a href="">已买到的宝贝</a>
+							<a href="">已卖出的宝贝</a>
+						</div>
+					</li>
+					<li>
+						
+						<a><i class="iconfont icon-gouwucheman"></i> 购物车0件</a>
+					</li>
+					<li>|</li>
+					<li class="menu">
+						<a>收藏夹</a>
+						<div class="hide">
+							<a href="">已买到的宝贝</a>
+							<a href="">已卖出的宝贝</a>
+						</div>
+					</li>
+					<li>
+						<a>淘宝网</a>
+					</li>
+					<li class="menu">
+						<a>商家支持</a>
+						<div class="hide hide1">
+							<div class="top">
+								<div class="title">
+									商家
+								</div>
+								<div class="desc">
+									<span>商家中心</span>
+									<span>天猫规则</span>
+									<span>商家入驻</span>
+									<span>运营服务</span>
+									<span>商家品控</span>
+									<span>商家工具</span>
+									<span>天猫智库</span>
+									<span>喵言喵语</span>
+								</div>
+							</div>
+							<div class="bottom">
+								<div class="title">
+									商家
+								</div>
+								<div class="desc">
+									<span>商家中心</span>
+									<span>天猫规则</span>
+								</div>
+							</div>
+						</div>
+					</li>
+				</ul>
+			</div>
+		</div>
+	</div>
+ </body>
+</html>

@@ -1,0 +1,62 @@
+<!doctype html><!-- 声明HTML5文档 -->
+<html lang="en"><!--网页根标签-->
+ <head><!--网页的头部-->
+  <meta charset="UTF-8"><!--编码格式 UTF-8 国际编码 gbk gb2312 meta 元标签-->
+  <meta name="Generator" content="EditPlus®">
+  <meta name="Author" content="黎明"><!--作者-->
+  <meta name="Keywords" content=""><!--关键字-->
+  <meta name="Description" content=""><!--网页的描述-->
+  <title>Document</title><!--标题-->
+  <style type="text/css">
+	*{
+		margin:0;
+		padding:0;
+	}
+	.wrap{
+		width:700px;
+		height:600px;
+		border:1px solid #000;
+	}
+	.wrap .list{
+		position:relative;
+		left:0;
+		width:100px;
+		height:100px;
+		margin-bottom:5px;
+		background-color:red;
+		transition-property:all;
+		transition-duration:3000ms;
+		animation:move 6s infinite alternate;
+		/* animation-iteration-count:infinite; */
+		/* transition-delay:1s; */
+	}
+	.wrap .list1{
+		transition-timing-function:linear;
+	}
+	.wrap .list2{
+		transition-timing-function:ease-in;
+	}
+	.wrap .list3{
+		transition-timing-function:ease-out;
+	}
+	.wrap .list4{
+		transition-timing-function:ease-in-out;
+	}
+	.wrap .list4{
+		transition-timing-function:cubic-bezier;
+	}
+	.wrap:hover .list{
+		left:400px;
+	}
+  </style>
+ </head>
+ <body>
+  <div class="wrap">
+		<div class="list list1">1</div>
+		<div class="list list2">2</div>
+		<div class="list list3">3</div>
+		<div class="list list4">4</div>
+		<div class="list list5">5</div>			
+  </div>
+ </body><!--可视化区域-->
+</html>

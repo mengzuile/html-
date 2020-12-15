@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        body{
+            background-color: brown;
+            font-weight: 100px;
+            color: white;
+        }
+        .container{
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%,-50%);
+            text-align: center;
+            user-select: none;
+        }
+        .container .text{
+            position: absolute;
+            width: 100%;
+            top: 1.5em;
+            z-index: 5;
+            font-size: 2em;
+            animation: text 3s ease-in-out infinite;
+        }
+        .spinner{
+            position: relative;
+            width: 10em;
+            height: 10em;
+        }
+        .spinner::before,.spinner::after{
+            content: '';
+            width: 10em;
+            height: 10em;
+            position: relative;
+            display: block;
+        }
+        .spinner::after{
+            position: relative;
+            bottom: -1.7em;
+            height: .25em;
+            border-radius: 50%;
+            background-color: #323b27;
+            animation: shadow 3s ease-in-out infinite;
+        }
+        .spinner::before{
+            background-color: #009688;
+            animation: spinner 3s ease-in-out infinite;
+        }
+
+        @keyframes text{
+            0%{
+                transform: scale(1,1);
+            }
+            50%{
+                transform: scale(.5,.5);
+            }
+            100%{
+                transform: scale(1,1);
+            }
+        }
+        @keyframes spinner{
+            50%{
+                border-radius: 50%;
+                transform: scale(.5) rotate(360deg);
+                background-color: #323b27;
+            }
+            100%{
+                transform: scale(1) rotate(720deg);
+                background-color: orange;
+
+            }
+        }
+
+        @keyframes shadow{
+            50%{
+                transform: scale(.5);
+            }
+            100%{
+                transform: scale(1);
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="text">only you</div>
+        <div class="spinner"></div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,64 @@
+<!doctype html>
+<html lang="en">
+ <head>
+  <meta charset="UTF-8">
+  <meta name="Generator" content="EditPlus®">
+  <meta name="Author" content="">
+  <meta name="Keywords" content="">
+  <meta name="Description" content="">
+  <title>Document</title>
+	<style type="text/css">
+		*{
+			margin:0;
+			padding:0;
+		}
+		li{
+			list-style:none;
+			float:left;
+		}
+		.wrap{
+			width:800px;
+			height:500px;
+			margin:50px auto;
+			border:1px solid red;
+		}
+		.wrap input{
+			float:left;
+			width:100px;
+			height:500px;
+			/* opacity:0; */			
+		}
+		.wrap .bg{
+			width:100px;
+			height:500px;
+			background-color:red;
+		}
+		.wrap input:checked + .bg{
+			width:500px;
+		}
+	</style>
+ </head>
+ <body>
+	<div class="wrap">
+		<ul>
+			<li>
+				<input type="radio" name="banner"/>
+				<div class="bg"></div>
+				<div class="bgg"></div>
+			</li>
+			<li>
+				<input type="radio" name="banner"/>
+				<div class="bg" style="background:green"></div>
+			</li>
+			<li>
+				<input type="radio" name="banner"/>
+				<div class="bg" style="background:yellow"></div>
+			</li>
+			<li>
+				<input type="radio" name="banner"/>
+				<div class="bg" style="background:purple"></div>
+			</li>
+		</ul>
+	</div>
+ </body>
+</html>

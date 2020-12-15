@@ -1,0 +1,40 @@
+<!doctype html>
+<html lang="en">
+ <head>
+  <meta charset="UTF-8">
+  <meta name="Generator" content="EditPlus®">
+  <meta name="Author" content="">
+  <meta name="Keywords" content="">
+  <meta name="Description" content="">
+  <title>Document</title>
+  <style type="text/css">
+		
+		.box{
+			width:200px;
+			height:100px;
+			background-color:blue;
+		}
+		div{
+			width:100px !important;
+			background-color:yellow !important;
+		}
+		#box1{
+			background-color:green;
+		}
+		
+		
+	
+  </style>
+ </head>
+ <body>
+  <!--
+	选择器的优先级：
+		元素选择<class选择器<id选择器(按照查找的范围来，范围越小权重越高)
+	相同优先级下，代码执行顺序从上至下执行；后面会覆盖前面的相同样式，
+	优先级不同，按照优先级来；优先级越高，就显示那个。
+		!important 把加了!important优先级提高优先级
+  -->
+  <div class="box box1" id="box1" style="background-color:orange"></div>
+  
+ </body>
+</html>

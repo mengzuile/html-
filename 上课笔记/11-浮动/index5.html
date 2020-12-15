@@ -1,0 +1,77 @@
+<!doctype html>
+<html lang="en">
+ <head>
+  <meta charset="UTF-8">
+  <meta name="Generator" content="EditPlus®">
+  <meta name="Author" content="">
+  <meta name="Keywords" content="">
+  <meta name="Description" content="">
+  <title>Document</title>
+  <style type="text/css">
+	*{
+		margin:0;
+		padding:0;
+	}
+	.wrap{
+		
+		width:100%;
+		border:1px solid red;
+	}
+	.wrap .box{
+		float:right;
+		width:100px;
+		height:100px;
+		background-color:green;
+	}
+	
+	.clearfix:after{
+		display:block;
+		content:"";
+		clear:both;
+
+	}
+  </style>
+ </head>
+ <body>
+	<!--
+		浮动元素的缺点：
+			会出现高度坍塌的问题
+		block format content
+			形成一个绝对的空间，空间里面的影响不到外面的，反之也一样；
+			1. display:inline-block;
+			2.float:left;
+			3.overflow:hidden;
+			4.
+		清除浮动：
+			目的：解决高度坍塌的问题
+				1.overflow:hidden;
+				优点：书写简单
+				缺点：超出部分隐藏；
+				2.给固定高度  
+				缺点：很难计算
+				3.clear:
+					left  
+					right
+					both
+				4.伪元素
+					.clearfix:after{
+						display:block;
+						content:"";
+						clear:both;
+
+					}
+					
+		dom tree + css tree  = render tree;
+		position:
+		animation:
+	-->
+	<!--
+		
+	-->
+	<div class="wrap clearfix">
+		<div class="box"></div>
+		
+	</div>
+	
+ </body>
+</html>

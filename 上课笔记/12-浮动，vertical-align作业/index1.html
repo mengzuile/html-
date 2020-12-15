@@ -1,0 +1,65 @@
+<!doctype html>
+<html lang="en">
+ <head>
+  <meta charset="UTF-8">
+  <meta name="Generator" content="EditPlus®">
+  <meta name="Author" content="">
+  <meta name="Keywords" content="">
+  <meta name="Description" content="">
+  <title>Document</title>
+  <style type="text/css">
+	*{
+		margin:0;
+		padding:0;
+	}
+	.wrap{
+		width:100px;
+		height:100px;
+		background-color:red;
+	}
+	.wrap:after{
+		display:block;
+		content:"";
+		width:100px;
+		height:100px;
+		background-color:green;
+	}
+  </style>
+ </head>
+ <body>
+	<!--
+		float:
+			left
+			right
+		浮动流：
+		层叠上下文：
+			block< float<inline/inline-block;
+		最出目的：
+			解决文字环绕的问题
+		元素特点：
+			1.不支持margin:auto，vertical-align;
+			2.包裹性
+			3.
+		伪元素：
+			本质上加的是一个空的行内元素；
+			:after
+			:before
+			::after
+			::before
+		清除浮动：
+			给固定宽高
+			overflow:hidden
+			clear:both;
+			.clearfix:after{
+				display:block;
+				content:"";
+				clear:both;
+			}
+
+	-->
+	<div class="wrap">
+	
+	</div>
+	<div class="box"></div>
+ </body>
+</html>

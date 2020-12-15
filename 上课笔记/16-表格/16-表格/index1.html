@@ -1,0 +1,83 @@
+<!doctype html>
+<html lang="en">
+ <head>
+  <meta charset="UTF-8">
+  <meta name="Generator" content="EditPlus®">
+  <meta name="Author" content="">
+  <meta name="Keywords" content="">
+  <meta name="Description" content="">
+  <title>Document</title>
+  <style type="text/css">
+	td,th{
+		padding:0;
+	}
+	table{
+		
+		margin:50px auto;
+		border:1px solid red;
+	}
+	table td{
+		border:1px solid red;
+		margin-left:50px;
+	}
+	table th{
+		border:1px solid red;
+	}
+	.box{
+		width:100px;
+		height:100px;
+		margin:50px;
+		background-color:red;
+	}
+  </style>
+ </head>
+ <body>
+	<!--
+		table:
+			display:table;
+			thead   表格头
+			tbody   身体
+			tfoot   尾部
+			tr  一行
+			th   单元格
+		1.th里面的内容默认居中加粗；
+		2.如果table有宽高，单元格会默认按比例来平分table的宽高；
+		3.如果table没有宽高，具有包裹性；
+		4.表格同一列/行会继承最大值；
+		5.不支持margin；
+		6.td里面可以嵌套任何东西；
+	-->
+	<table>
+		<tr>
+			<th>姓名</th>
+			<th>afei</th>
+			<th>朱雀</th>
+			<th>青龙</th>
+		</tr>
+	
+		<tr>
+			<td>爱好：</td>
+			<td>挖煤5151515</td>
+			<td>帅哥</td>
+			<td>闷骚</td>
+		</tr>
+		<tr style="height:150px;">
+			<td style="width:200px">性别：</td>
+			<td >男<input type="text" /></td>
+			<td>女</td>
+			<td>男</td>
+		</tr>
+		<tr>
+			<td>年龄：</td>
+			<td>18</td>
+			<td>38</td>
+			<td>43</td>
+		</tr>
+	
+		<tr><td>
+			123
+			</td></tr>
+		
+	</table>
+ </body>
+</html>

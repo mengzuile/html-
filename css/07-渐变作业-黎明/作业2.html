@@ -1,0 +1,116 @@
+<!doctype html>
+<html lang="en">
+ <head>
+  <meta charset="UTF-8">
+  <meta name="Generator" content="EditPlus®">
+  <meta name="Author" content="">
+  <meta name="Keywords" content="">
+  <meta name="Description" content="">
+  <title>Document</title>
+  <style type="text/css">
+	*{
+		margin:0px;
+		padding:0px;
+	}
+    body{
+		background-color:#000;	
+	}
+	.wrap{
+		width:700px;
+		height:100px;
+		margin:150px auto;
+    }
+	.wrap .fa{
+	box-shadow:0px 0px 6px #fff,0px 0px 12px #fafafa,1px 3px 0px #000
+	inset;
+	}
+	.wrap .box{
+		overflow:hidden;
+		display:inline-block;
+		width:200px;
+		height:100px;
+		background-color:#fff;
+	}
+	.wrap .left{
+		border-radius:1% 57% 1% / 1% 95% 1%;
+	}		/* 半径 */
+	.wrap .right{
+		margin-left:290px;
+		border-radius:57% 1% 57% / 95% 1% 95%;
+	}
+	.wrap .eye{
+		width:100px;
+		height:100px;
+		border-radius:50%;
+		margin-top:10px;
+		background:
+			radial-gradient(
+				#fff 10px,
+				transparent 10px
+			),
+			radial-gradient(
+				#000 35px,
+				transparent 35px
+			),
+			linear-gradient(
+				to bottom,
+				#000 50%,
+				transparent 50%
+			) no-repeat center/20px,
+			radial-gradient(
+				transparent 0px,
+				transparent 45px,
+				#000 45px,
+				#000 50px
+			),
+			linear-gradient(
+				red 50%,
+				transparent 50%
+			),
+			linear-gradient(
+				-40deg,
+				transparent 0px,
+				transparent 60px,
+				#000 60px,
+				#000 80px,
+				transparent 80px
+			),
+			linear-gradient(
+				40deg,
+				transparent 0px,
+				transparent 60px,
+				#000 60px,
+				#000 80px,
+				transparent 80px
+			),
+			linear-gradient(
+				to left,
+				red,
+				red
+			);
+	}
+	.wrap .left .eye{
+		margin-left:80px;
+	}
+	.wrap .right .eye{
+		margin-left:10px;
+	} 	
+	/* .wrap .left .eye{
+		margin-left:80px;
+	}
+	.wrap .right .eye{
+		margin-left:10px;
+	} */
+  </style>	
+ </head>
+ <body>
+	<div class="wrap">
+		<div class="left box fa">
+			<div class="eye"></div>
+		</div>
+		<div class="right box fa">
+			<div class="eye"></div>
+		</div>
+	</div>
+ </body>
+</html>

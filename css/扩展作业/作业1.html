@@ -1,0 +1,61 @@
+<!doctype html><!-- 声明HTML5文档 -->
+<html lang="en"><!--网页根标签-->
+ <head><!--网页的头部-->
+  <meta charset="UTF-8"><!--编码格式 UTF-8 国际编码 gbk gb2312 meta 元标签-->
+  <meta name="Generator" content="EditPlus®">
+  <meta name="Author" content="黎明"><!--作者-->
+  <meta name="Keywords" content=""><!--关键字-->
+  <meta name="Description" content=""><!--网页的描述-->
+  <title>Document</title><!--标题-->
+  <style type="text/css">
+	*{
+		margin:0;
+		padding:0;
+	}
+	.wrap{
+		position:relative;
+		width:400px;
+		height:400px;
+		margin:40px auto;
+		background-color:pink;
+	}
+	.wrap .petals{
+		position:absolute;
+		left:59px;
+		top:59px;
+		width:100px;
+		height:100px;
+		background-color:#0738eab8;
+		opacity:.5;
+		border-radius:0px 105px 0px 105px;
+	}
+	.wrap .petals .round{
+		position:absolute;
+		left:37px;
+		top:31px;
+		width:12px;
+		height:12px;
+		box-shadow:0 0 14px 5px white;
+		background-color:#ecec8ffa;
+		border-radius:50%;
+	}
+	.wrap .petals .diameter{
+		position:absolute;
+		left:74px;
+		top:39px;
+		width:2px;
+		height:68px;
+		transform:rotate(138deg);
+		background-color:#990099bf;
+	}
+  </style>
+ </head>
+ <body>
+	<div class="wrap">
+		<div class="petals">
+			<div class="round"></div>
+			<div class="diameter"></div>
+		</div>
+	</div>
+ </body><!--可视化区域-->
+</html>

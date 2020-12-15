@@ -1,0 +1,54 @@
+<!doctype html>
+<html lang="en">
+ <head>
+  <meta charset="UTF-8">
+  <meta name="Generator" content="EditPlus®">
+  <meta name="Author" content="">
+  <meta name="Keywords" content="">
+  <meta name="Description" content="">
+  <title>Document</title>
+  <style type="text/css">
+	*{
+		margin:0;
+		padding:0;
+	}
+	li{
+		list-style:none;
+		width:100px;
+		height:100px;
+		background-color:pink;
+	}
+	li:not(.wrap){
+		background-color:green;
+	}
+
+	::selection{
+		color:Red;
+		background-color:pink;
+	}
+	.box:first-line{
+		font-weight:bold;
+		color:purple;
+	}
+	.box:first-letter{
+		font-weight:bold;
+		font-size:20px;
+	}
+  </style>
+ </head>
+ <body>
+	<!--
+		E：not(selector)	选择非 selector 选择器的每个元素。
+		E::selection	表示E元素在用户选中文字时
+		E：first-line	表示E元素中的第一行
+		E：first-letter	表示E元素中的第一个字符
+	-->
+	<ul>
+		<li>1</li>
+		<li class="box">2前面不加类名的吗他说的是文字的背景颜色他说的是文字的背景颜色他说的是文字的背景颜色</li>
+		<li class="wrap">3</li>
+		<li class="wrap">4</li>
+		<li>5</li>
+	</ul>
+ </body>
+</html>

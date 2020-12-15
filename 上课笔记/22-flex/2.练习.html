@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        #content{
+            width: 1000px;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            margin: 0 auto;
+        }
+        #content>div{
+            background-color: #36d;
+        }
+        #content>div:first-child{
+            width: 609px;
+            height: 377px;
+            margin-bottom: 10px;
+        }
+        #content>div:nth-child{
+            width: 609px;
+            height: 377px;
+            margin-bottom: 10px;
+        }
+        #content>div:nth-child(2){
+            width: 381px;
+            height: 377px;
+            margin-bottom: 10px;
+        }
+        #content>div:nth-child(3){
+            width: 377px;
+            height: 233px;
+            margin-bottom: 10px;
+        }
+        #content>div:nth-child(4),#content>div:nth-child(5),#content>div:nth-child(6){
+            width: 198px;
+            height: 233px;
+        }
+    </style>
+</head>
+<body>
+    <div id="content">
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+    </div>
+</body>
+</html>

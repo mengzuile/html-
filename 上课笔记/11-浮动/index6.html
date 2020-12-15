@@ -1,0 +1,47 @@
+<!doctype html>
+<html lang="en">
+ <head>
+  <meta charset="UTF-8">
+  <meta name="Generator" content="EditPlus®">
+  <meta name="Author" content="">
+  <meta name="Keywords" content="">
+  <meta name="Description" content="">
+  <title>Document</title>
+  <style type="text/css">
+	*{
+		margin:0;
+		padding:0;
+	}
+	/*before在上*/
+	.wrap:before{
+		display:block;
+		content:"朱雀";
+		width:100px;
+		height:100px;
+		background-color:red;
+	}
+	/*after在下*/
+	.wrap:after{
+		
+		display:block;
+		content:"玄武";
+		width:100px;
+		height:100px;
+		background-color:green;
+	}
+	
+  </style>
+ </head>
+ <body>
+	<!--
+		伪元素：
+			本质是加的一个空的行内元素；
+		伪类：实现选择器所不能解决的效果；:hover
+		:  和 ::都是一样的效果；
+
+	-->
+	<div class="wrap">
+		我
+	</div>
+ </body>
+</html>

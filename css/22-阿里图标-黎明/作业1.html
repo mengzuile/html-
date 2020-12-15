@@ -1,0 +1,178 @@
+<!doctype html><!-- 声明HTML5文档 -->
+<html lang="en"><!--网页根标签-->
+ <head><!--网页的头部-->
+  <meta charset="UTF-8"><!--编码格式 UTF-8 国际编码 gbk gb2312 meta 元标签-->
+  <meta name="Generator" content="EditPlus®">
+  <meta name="Author" content="黎明"><!--作者-->
+  <meta name="Keywords" content=""><!--关键字-->
+  <meta name="Description" content=""><!--网页的描述-->
+  <title>Document</title><!--标题-->
+  <link rel="stylesheet" href="font/iconfont.css" />
+  <style type="text/css">
+	*{
+		margin:0;
+		padding:0;
+	}
+	a{
+		text-decoration:none;
+	}
+	li{
+		list-style:none;
+	}
+	body{
+		font: 12px/1.5 tahoma,arial,"\5b8b\4f53";
+	}
+	.header{
+		height:27px;
+		background-color:#F2F2F2;
+	}
+	.header .container{
+		position:relative;
+		width:990px;
+		height:27px;
+		line-height:27px;
+		margin:auto;
+	}
+	.header a{
+		color:#999;
+		margin-right:10px;
+	}
+	.header a:hover{
+		color:red;
+		text-decoration:underline;
+	}
+	.header .h-c-left em{
+		color:#999;
+		margin-right:10px;
+		font-style:normal;
+	}
+	.header .iconfont{
+		font-size:13px;
+		color:red;
+		margin-right:5px;
+	}
+	.header .h-c-right{
+		position:absolute;
+		right:0px;
+		top:0;
+	}
+	.header .h-c-right li{
+		position:relative;
+		float:left;
+		padding:0 10px;
+	}
+	.header .h-c-right li.menu{
+		padding-right:15px;
+	}
+	.header .h-c-right li.menu:after{
+		position:absolute;
+		top:12px;
+		right:3px;
+		content:"";
+		width:0;
+		height:0;
+		border:4px solid transparent;
+		border-bottom-color:#999;
+		border-top:none;
+		transition:1s;
+	}
+	.header .h-c-right li:hover:after{
+		transform:rotate(180deg);
+	}
+	.header .h-c-right li.menu:hover{
+		background-color:#fff;
+	}
+	.header .h-c-right a{
+		margin:0;
+	}
+	.header .h-c-right .hide > a{
+		position:relative;
+		z-index:10;
+		display:block;
+		height:27px;
+		background-color:#F2F2F2;
+	}
+	.header .h-c-right li:hover .hide{
+		display:block;
+	}
+	.header .h-c-right .hide{
+		display:none;
+		position:absolute;
+		top:27px;
+		left:0;
+		width:96px;
+		border:1px solid #eee;
+		border-top:none;
+		text-align:center;
+		line-height:30px;
+	}
+	.header .h-c-right .hide:hover{
+		
+	}
+	.header .h-c-right .hide a{
+		display:block;
+	}
+	.header .h-c-right li.menu:hover a{
+		background-color:#FFF;
+	}
+  </style>
+ </head>
+ <body>
+	<div class="header">
+		<div class="container">
+			<div class="h-c-left">
+				<i class="iconfont icon-zhuye"></i>
+				<a href="">天猫首页</a>
+				<em>喵，欢迎来天猫</em>
+				<a href="">请登录</a>
+				<a href="">免费注册</a>
+			</div>
+			<div class="h-c-right">
+				<ul>
+					<li class="menu">
+						<a href="">我的淘宝</a>
+						<div class="hide">
+							<a href="">已买到的宝贝</a>
+							<a href="">已卖出的宝贝</a>
+						</div>
+					</li>
+					<li>
+						<i class="iconfont icon-gouwucheman"></i>
+						<a>购物车0件</a>
+					</li>
+					<li class="menu">
+						<a href="">收藏夹</a>
+						<div class="hide">
+							<a href="">收藏的宝贝</a>
+							<a href="">收藏的店铺</a>
+						</div>
+					</li>
+					<li>
+						<a href="">淘宝网</a>
+					</li>
+					<li class="menu">
+						<a href="">商家支持</a>
+						<div class="hide hide1">
+							<div class="top">
+								<div class="title">
+									商家：
+								</div>
+								<div class="desc">
+									<a href="">商家中心</a>
+									<a href="">天猫规则</a>
+									<a href="">商家入驻</a>
+									<a href="">运营服务</a>
+									<a href="">商家品控</a>
+									<a href="">商家工具</a>
+									<a href="">天猫智库</a>
+									<a href="">喵言喵语</a>
+								</div>
+							</div>
+						</div>
+					</li>
+				</ul>	
+			</div>
+		</div>
+	</div>
+ </body><!--可视化区域-->
+</html>
